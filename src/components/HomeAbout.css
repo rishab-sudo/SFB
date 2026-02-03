@@ -1,0 +1,131 @@
+.home-about {
+  padding: 120px 0 80px;
+  background: #ffffff;
+}
+
+/* LEFT CONTENT */
+.home-about-content {
+  max-width: 520px;
+}
+
+.home-about-tag {
+  font-size: 42px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px #b6e44b;
+  display: block;
+  margin-bottom: -12px;
+}
+
+.home-about-heading {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #0e2a34;
+}
+
+.home-about-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+/* POINTS */
+.home-about-points {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.home-about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-about-list-item {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 26px;
+}
+
+.home-about-list-item::before {
+  content: "↗";
+  position: absolute;
+  left: 0;
+  color: #b6e44b;
+  font-weight: 700;
+}
+
+/* BUTTON */
+.home-about-btn {
+  background: #b6e44b;
+  color: #111;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RIGHT IMAGE */
+.home-about-image-wrapper {
+  position: relative;
+}
+
+.home-about-image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* PLAY BUTTON */
+.home-about-play-btn {
+  position: absolute;
+  top: 40px;
+  left: -30px;
+  width: 70px;
+  height: 70px;
+  background: #b6e44b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .home-about {
+    padding: 80px 0;
+  }
+
+  .home-about-content {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .home-about-points {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-about-play-btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 576px) {
+  .home-about-heading {
+    font-size: 32px;
+  }
+
+  .home-about-tag {
+    font-size: 34px;
+  }
+}
