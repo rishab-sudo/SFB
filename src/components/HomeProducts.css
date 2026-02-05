@@ -1,0 +1,135 @@
+.home-products {
+  margin-top: 3.5%;
+  padding: 25px 0;
+  background: #f9f9f9;
+}
+
+/* HEADER */
+.home-products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.home-products-subtitle {
+  color: #b6e44b;
+  display: block;
+
+}
+
+.home-products-title {
+  color: #0e2a34;
+}
+
+/* ARROWS */
+.home-products-arrows {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+
+.home-products-arrow {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+/* CARD */
+.home-products-card {
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+/* IMAGE AREA */
+.home-products-card-image {
+  position: relative;
+  height: 240px; /* ~75% feel */
+  overflow: hidden;
+}
+
+.home-products-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* HOVER OVERLAY */
+.home-products-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 25px;
+
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.home-products-card-overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-align: left;
+}
+
+.home-products-card-overlay li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* HOVER EFFECT */
+.home-products-card:hover .home-products-card-image img {
+  transform: scale(1.1);
+}
+
+.home-products-card:hover .home-products-card-overlay {
+  opacity: 1;
+}
+
+/* CONTENT */
+.home-products-card-content {
+  padding: 16px;
+}
+
+.home-products-card-content h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #0e2a34;
+}
+
+.home-products-card-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.home-products-readmore {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0e2a34;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .home-products-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .home-products-title {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,161 @@
+.process {
+  margin-top: 3.5%;
+  padding: 25px 0;
+  background: #ffffff;
+}
+
+.process-container {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* DOTTED LINE WRAPPER */
+.process-line {
+  position: absolute;
+  top: 65px;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+/* EACH SEGMENT */
+.process-line-seg {
+  flex: 1;
+  margin: 0 10px;
+  height: 0;
+  width: 0%;
+  border-top: none;          /* 🔴 NO LINE INITIALLY */
+}
+.process-icon{
+  width: 50px;
+  height: 50px;
+}
+/* DRAW ANIMATION */
+.process-line-seg.line-active {
+  border-top: 2px dotted #1e6bd6;  /* ✅ LINE APPEARS ONLY WHEN ACTIVE */
+  animation: drawLine 0.6s ease forwards;
+}
+
+
+@keyframes drawLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+/* ITEM */
+.process-item {
+  position: relative;
+  z-index: 2;
+  width: 22%;
+  text-align: center;
+  opacity: 0;
+}
+
+/* CIRCLE */
+.process-circle {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: #1e6bd6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  color: #fff;
+  font-size: 32px;
+}
+
+/* TEXT */
+.process-text h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #0e2a34;
+}
+
+.process-text p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* BASE ANIMATION SETUP */
+.process-animate {
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+/* KEYFRAMES */
+@keyframes fromLeft {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* DIRECTION CLASSES */
+.process-from-left.process-animate {
+  animation-name: fromLeft;
+}
+
+.process-from-top.process-animate {
+  animation-name: fromTop;
+}
+
+.process-from-bottom.process-animate {
+  animation-name: fromBottom;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .process-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .process-line {
+    display: none;
+  }
+
+  .process-item {
+    width: 100%;
+  }
+}

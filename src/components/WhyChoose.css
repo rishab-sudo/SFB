@@ -1,5 +1,6 @@
 .why-choose {
-  padding: 100px 0;
+  margin-top: 14%;
+  padding: 25px 0;
   background: #ffffff;
 }
 
@@ -39,30 +40,21 @@
 
 /* CONTENT */
 .why-choose-content {
-  padding: 40px 60px;
+  padding: 25px 35px;
 }
 
 .why-choose-tag {
-  font-size: 42px;
-  font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 1px #b6e44b;
   display: block;
-  margin-bottom: -10px;
-}
+ }
 
 .why-choose-heading {
-  font-size: 42px;
-  font-weight: 700;
   color: #0e2a34;
-  margin-bottom: 18px;
 }
 
 .why-choose-description {
-  font-size: 16px;
-  line-height: 1.8;
   color: #555;
-  margin-bottom: 30px;
 }
 
 /* FEATURES */
@@ -84,6 +76,52 @@
   color: #666;
   line-height: 1.6;
 }
+/* ===== WHY US BOXES ===== */
+.whyus-box-container {
+  margin-top: 50px;
+}
+
+.whyus-box-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* EACH BOX */
+.whyus-box-item {
+  flex: 1;
+  flex-direction: column;
+  background: blue;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start; /* left aligned */
+  gap: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.whyus-box-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* TEXT */
+.whyus-box-text h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #0e2a34;
+}
+
+.whyus-box-text p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
@@ -115,5 +153,13 @@
     left: 0;
     bottom: 0;
     margin: 20px;
+  }
+    .whyus-box-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whyus-box-item {
+    width: 95%;
   }
 }

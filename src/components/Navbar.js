@@ -12,7 +12,7 @@ const Navbar = () => {
         <Container className="navbar-inner">
           {/* LEFT LOGO */}
           <div className="nav-logo">
-            <img src="/logo.png" alt="Logo" />
+            <img src={require("../assets/Banner/LOGO SPF final.png")} alt="Logo" />
           </div>
 
           {/* DESKTOP MENU */}

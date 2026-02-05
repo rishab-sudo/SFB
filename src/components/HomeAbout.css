@@ -1,5 +1,6 @@
 .home-about {
-  padding: 120px 0 80px;
+  margin-top: 3.5%;
+  padding: 25px 0 ;
   background: #ffffff;
 }
 
@@ -9,27 +10,18 @@
 }
 
 .home-about-tag {
-  font-size: 42px;
-  font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 1px #b6e44b;
   display: block;
-  margin-bottom: -12px;
 }
 
 .home-about-heading {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 18px;
   color: #0e2a34;
 }
 
 .home-about-description {
-  font-size: 16px;
-  line-height: 1.8;
   color: #555;
-  margin-bottom: 24px;
-}
+ }
 
 /* POINTS */
 .home-about-points {

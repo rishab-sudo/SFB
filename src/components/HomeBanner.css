@@ -31,9 +31,9 @@
 /* BOTTOM WRAPPER */
 .hb-bottom-wrapper {
   position: absolute;
-  bottom: -50px;
+  bottom: -145px;
   left: 6%;
-  width: 88%;
+  width: 75%;
   display: flex;
   z-index: 20;
 }
@@ -75,9 +75,12 @@
 /* RIGHT WHITE BOX */
 .hb-bottom-right {
   width: 35%;
-  background: #ffffff;
+  /* background: #ffffff; */
+  background-color: antiquewhite;
   padding: 28px 32px;
+  padding-top: 80px !important;
   overflow: hidden;
+  margin-left: auto;
 
 }
 

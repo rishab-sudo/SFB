@@ -1,0 +1,90 @@
+.achv-fluid {
+  margin-top: 3.5%;
+  padding: 25px 0;
+}
+
+.achv {
+  position: relative;
+}
+
+/* HEADER */
+.achv-header {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.achv-heading {
+
+}
+
+.achv-subheading {
+
+}
+
+/* ROW */
+.achv-row {
+  row-gap: 45px !important;
+}
+
+/* BOX */
+.achv-box {
+  position: relative;
+  background: #ffffff;
+  padding: 30px 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: 275px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* ICON CIRCLE */
+.achv-icon-circle {
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background: #1e6bd6; /* blue circle */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achv-icon-circle img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* make icon white */
+}
+
+/* CONTENT */
+.achv-box-content{
+    margin: auto;
+}
+.achv-box-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0e2a34;
+  margin-bottom: 4px;
+}
+
+.achv-box-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .achv-heading {
+    font-size: 30px;
+  }
+
+  .achv-box {
+    padding-left: 70px;
+    margin: auto !important;
+  }
+}

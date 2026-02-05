@@ -10,14 +10,14 @@ const HomeAbout = () => {
           {/* LEFT CONTENT */}
           <Col lg={6} md={12}>
             <div className="home-about-content">
-              <span className="home-about-tag">About Us</span>
+              <span className="home-about-tag page-heading">About Us</span>
 
-              <h2 className="home-about-heading">
+              <h2 className="home-about-heading page-large-heading">
                 We Are Solutions For <br />
                 Your Brand Packaging
               </h2>
 
-              <p className="home-about-description">
+              <p className="home-about-description page-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 adiqua minim veniam quis nostrud exercitation ullamco laboris
