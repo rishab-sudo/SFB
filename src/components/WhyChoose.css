@@ -91,7 +91,8 @@
 .whyus-box-item {
   flex: 1;
   flex-direction: column;
-  background: blue;
+  background: #286a94;
+    color: #ffffff;
   padding: 20px;
   display: flex;
   align-items: flex-start; /* left aligned */
@@ -111,12 +112,14 @@
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 6px;
-  color: #0e2a34;
+  color: #ffffff;
+  /* color: #0e2a34; */
 }
 
 .whyus-box-text p {
   font-size: 14px;
-  color: #666;
+  /* color: #666; */
+    color: #ffffff;
   margin: 0;
   line-height: 1.5;
 }

@@ -11,19 +11,19 @@ const reviews = [
   {
     name: "",
     title: "",
-    image: require("../assets/Banner/LOGO SPF final.png"),
+    image: require("../assets/logo22.png"),
     text: "From our first strategy call to consistent monthly results, the team was highly responsive, data driven, and proactive. Their social media management and SEO efforts improved our visibility, engagement, and lead quality significantly."
   },
   {
     name: "",
     title: "",
-    image: require("../assets/Banner/LOGO SPF final.png"),
+    image: require("../assets/logo22.png"),
     text: "From our first strategy call to consistent monthly results, the team was highly responsive, data driven, and proactive. Their performance marketing campaigns delivered strong ROI and helped us scale leads across multiple channels."
   },
   {
     name: "",
     title: "",
-      image: require("../assets/Banner/LOGO SPF final.png"),
+      image: require("../assets/logo22.png"),
     text: "From our first strategy call to consistent monthly results, the team was highly responsive, data driven, and proactive. Their SEO and social media execution strengthened our brand presence and generated steady, qualified enquiries."
   },
 ];

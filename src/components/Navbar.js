@@ -12,14 +12,15 @@ const Navbar = () => {
         <Container className="navbar-inner">
           {/* LEFT LOGO */}
           <div className="nav-logo">
-            <img src={require("../assets/Banner/LOGO SPF final.png")} alt="Logo" />
+            <img src={require("../assets/logo22.png")} alt="Logo" />
           </div>
 
           {/* DESKTOP MENU */}
           <ul className="nav-links">
             <li><NavLink to="/home">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/services">Services</NavLink></li>
+            <li><NavLink to="/services">Products & Solutions</NavLink></li>
+             <li><NavLink to="/industry">Industries</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
 

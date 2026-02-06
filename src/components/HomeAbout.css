@@ -11,7 +11,7 @@
 
 .home-about-tag {
   color: transparent;
-  -webkit-text-stroke: 1px #b6e44b;
+  -webkit-text-stroke: 1px #286a94;
   display: block;
 }
 
@@ -48,14 +48,14 @@
   content: "↗";
   position: absolute;
   left: 0;
-  color: #b6e44b;
+  color: #286a94;
   font-weight: 700;
 }
 
 /* BUTTON */
 .home-about-btn {
-  background: #b6e44b;
-  color: #111;
+  background: #286a94;
+  color: #fff;
   border: none;
   padding: 14px 28px;
   border-radius: 30px;
@@ -80,14 +80,14 @@
   left: -30px;
   width: 70px;
   height: 70px;
-  background: #b6e44b;
+  background: #286a94;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 26px;
   font-weight: bold;
-  color: #111;
+  color: #fff;
 }
 
 /* RESPONSIVE */

@@ -8,10 +8,21 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-/* background-color: #902724; */
+/* background-color: #286a94; */
 
 }
-
+.footer-logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+.footer-logo img{
+  height: 50px;
+  width: auto;
+  margin-right: auto;
+}
 .footer-col h5 {
   color: #fff;
   margin-bottom: 16px;
@@ -42,7 +53,7 @@ align-items: center;
 }
 
 .footer-col a:hover {
-  color: #902724;
+  color: #286a94;
 }
 
 /* BOTTOM BAR */

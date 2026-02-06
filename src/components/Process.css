@@ -38,7 +38,7 @@
 }
 /* DRAW ANIMATION */
 .process-line-seg.line-active {
-  border-top: 2px dotted #1e6bd6;  /* ✅ LINE APPEARS ONLY WHEN ACTIVE */
+  border-top: 2px dotted #286a94;  /* ✅ LINE APPEARS ONLY WHEN ACTIVE */
   animation: drawLine 0.6s ease forwards;
 }
 
@@ -67,7 +67,7 @@
   width: 125px;
   height: 125px;
   border-radius: 50%;
-  background: #1e6bd6;
+  background: #286a94;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -10,6 +10,9 @@ const Footer = () => {
           <Row className="footer-top">
             {/* ABOUT */}
             <Col lg={3} md={6} className="footer-col">
+             <div className="footer-logo">
+            <img src={require("../assets/logo22.png")} alt="Logo" />
+          </div>
               <p>
                 We operate from a robust infrastructure, divided into key
                 departments like procurement, production, quality control, and
@@ -60,7 +63,7 @@ const Footer = () => {
         <Container className="footer-bottom-inner">
           <span>© Polyfab 2026 | All Rights Reserved.</span>
           <span>
-            Designed & Developed by <strong>Metromindz Pvt. Ltd.</strong>
+            Designed & Developed by <strong>21Maneuvers Pvt. Ltd.</strong>
           </span>
         </Container>
       </div>

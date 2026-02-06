@@ -16,7 +16,7 @@
 
 .nav-logo img {
   height: 50px;
-  width: 50px;
+  width: auto;
 }
 
 .nav-links {
@@ -37,11 +37,11 @@
 }
 
 .nav-links a.active {
-  color: #902724;
+  color: #286a94;
 }
 
 .nav-btn button {
-  background: #902724;
+  background: #286a94;
   color: #fff;
   border: none;
   padding: 10px 18px;

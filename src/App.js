@@ -3,20 +3,23 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import { Routes, Route } from "react-router-dom";
 import './App.css';
 import  Navbar  from './components/Navbar';
+import AppButtons from './components/AppButtons';
 import Footer from './components/Footer';
 import Home from "./pages/Home"
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
+import Industry from './pages/Industry';
 
 function App() {
   return (
     <>
    <Navbar />
-
+<AppButtons/>
       <Routes>
         <Route path="/" element={ <Home />} />
        <Route path="/home" element={ <Home />} />
           <Route path="/about" element={ <AboutUs />} />
+             <Route path="/industry" element={ <Industry />} />
         <Route path="/contact" element={ <ContactUs />} />
       </Routes>
        <Footer />
