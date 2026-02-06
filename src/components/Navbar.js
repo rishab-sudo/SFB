@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GetQuotePopup from "../components/GetQuotePopup";
 import { Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
@@ -6,6 +7,8 @@ import "./Navbar.css";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [showQuote, setShowQuote] = useState(false);
+
 
   return (
     <>
@@ -43,9 +46,10 @@ const Navbar = () => {
           </ul>
 
           {/* RIGHT BUTTON */}
-          <div className="nav-btn">
-            <button>Get Quote</button>
-          </div>
+      <div className="nav-btn">
+  <button onClick={() => setShowQuote(true)}>Get Quote</button>
+</div>
+
 
           {/* HAMBURGER (MOBILE) */}
           <div className="hamburger" onClick={() => setOpen(true)}>
@@ -87,7 +91,8 @@ const Navbar = () => {
       </div>
 
       {/* OVERLAY */}
-      {open && <div className="overlay" onClick={() => setOpen(false)} />}
+<GetQuotePopup open={showQuote} onClose={() => setShowQuote(false)} />
+
     </>
   );
 };
