@@ -71,13 +71,14 @@ const Navbar = () => {
           </span>
 
           {dropdownOpen && (
-            <div className="mobile-dropdown-menu">
-              <NavLink to="/products/pp-fabric" onClick={() => setOpen(false)}>PP Fabric</NavLink>
-              <NavLink to="/products/pp-bags" onClick={() => setOpen(false)}>PP Bags</NavLink>
-              <NavLink to="/products/monolayer-films" onClick={() => setOpen(false)}>Monolayer Films</NavLink>
-              <NavLink to="/products/multifilament-yarn" onClick={() => setOpen(false)}>Multifilament Yarn</NavLink>
-              <NavLink to="/products/reprocess-granules" onClick={() => setOpen(false)}>Reprocess Granules</NavLink>
-            </div>
+   <div className="mobile-dropdown-menu">
+  <NavLink to="/products/pp-fabric" onClick={() => setOpen(false)}>PP Fabric</NavLink>
+  <NavLink to="/products/pp-bags" onClick={() => setOpen(false)}>PP Bags</NavLink>
+  <NavLink to="/products/monolayer-films" onClick={() => setOpen(false)}>Monolayer Films</NavLink>
+  <NavLink to="/products/multifilament-yarn" onClick={() => setOpen(false)}>Multifilament Yarn</NavLink>
+  <NavLink to="/products/reprocess-granules" onClick={() => setOpen(false)}>Reprocess Granules</NavLink>
+</div>
+
           )}
         </div>
 
