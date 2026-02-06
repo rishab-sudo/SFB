@@ -9,7 +9,7 @@ const AboutUs = () => {
       {/* ===== SECTION 1 ===== */}
       <section className="about-section-one">
         <Container className="about-container">
-          <Row className="align-items-center">
+          <Row className="align-items-between">
             {/* LEFT CONTENT */}
             <Col lg={6} md={12}>
               <div className="about-content">
@@ -38,7 +38,7 @@ const AboutUs = () => {
             <Col lg={6} md={12}>
               <div className="about-image-wrapper">
                 <img
-                  src="/about/about-1.jpg"
+                     src={require("../assets/Banner/sfb-demo-bg.jpg")}
                   alt="About Us"
                   className="about-image"
                 />
@@ -51,12 +51,12 @@ const AboutUs = () => {
       {/* ===== SECTION 2 ===== */}
       <section className="our-quality">
         <Container className="our-quality-container">
-          <Row className="align-items-center">
+        <Row className="align-items-between">
             {/* LEFT IMAGE */}
             <Col lg={6} md={12}>
               <div className="our-quality-image-wrapper">
                 <img
-                  src="/about/about-2.jpg"
+                     src={require("../assets/Banner/sfb-demo-bg.jpg")}
                   alt="Our Quality"
                   className="our-quality-image"
                 />
@@ -110,7 +110,7 @@ const AboutUs = () => {
       <section className="directors">
         <Container className="directors-container">
           {/* ROW 1: TEXT LEFT, IMAGE RIGHT */}
-          <Row className="align-items-center directors-row">
+          <Row className="align-items-between directors-row">
             <Col lg={6} md={12}>
               <div className="directors-content">
                 <h2 className="directors-heading page-large-heading">Our Director</h2>
@@ -125,7 +125,7 @@ const AboutUs = () => {
             <Col lg={6} md={12}>
               <div className="directors-image-wrapper">
                 <img
-                  src="/about/director-1.jpg"
+                    src={require("../assets/Banner/sfb-demo-bg.jpg")}
                   alt="Director 1"
                   className="directors-image"
                 />
@@ -138,7 +138,7 @@ const AboutUs = () => {
             <Col lg={6} md={12}>
               <div className="directors-image-wrapper">
                 <img
-                  src="/about/director-2.jpg"
+                     src={require("../assets/Banner/sfb-demo-bg.jpg")}
                   alt="Director 2"
                   className="directors-image"
                 />
@@ -173,7 +173,7 @@ const AboutUs = () => {
             <Col lg={6} md={12}>
               <div className="directors-image-wrapper">
                 <img
-                  src="/about/director-3.jpg"
+                  src={require("../assets/Banner/sfb-demo-bg.jpg")}
                   alt="Director 3"
                   className="directors-image"
                 />

@@ -10,8 +10,8 @@ const Achievements = () => {
         <div className="achv-header">
           <h2 className="achv-heading page-heading">Our Achievements</h2>
           <p className="achv-subheading page-large-heading">
-            Delivering excellence through numbers that speak for our quality,
-            trust, and performance.
+            Delivering excellence through numbers that speak for our quality.
+          
           </p>
         </div>
 

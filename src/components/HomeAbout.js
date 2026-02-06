@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import {Link} from "react-router-dom"
 import "./HomeAbout.css";
 
 const HomeAbout = () => {
@@ -40,7 +41,7 @@ const HomeAbout = () => {
                 </ul>
               </div>
 
-              <button className="home-about-btn">About Us</button>
+              <Link to ="/about"><button className="home-about-btn">About Us</button></Link>
             </div>
           </Col>
 

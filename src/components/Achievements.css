@@ -10,7 +10,7 @@
 /* HEADER */
 .achv-header {
   max-width: 600px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .achv-heading {
@@ -24,6 +24,7 @@
 /* ROW */
 .achv-row {
   row-gap: 45px !important;
+  margin: auto;
 }
 
 /* BOX */

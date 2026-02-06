@@ -9,7 +9,7 @@
 }
 
 .about-container {
-  max-width: 1200px;
+  width: 100%;
 }
 
 .about-content {
@@ -51,7 +51,7 @@
 }
 
 .our-quality-container {
-  max-width: 1200px;
+  width: 100%;
 }
 
 .our-quality-image-wrapper {
@@ -118,7 +118,7 @@
 }
 
 .directors-container {
-  max-width: 1200px;
+  width: 100%;
 }
 
 .directors-row {

@@ -5,6 +5,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <>
@@ -19,8 +20,25 @@ const Navbar = () => {
           <ul className="nav-links">
             <li><NavLink to="/home">Home</NavLink></li>
             <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/services">Products & Solutions</NavLink></li>
-             <li><NavLink to="/industry">Industries</NavLink></li>
+
+            {/* DROPDOWN */}
+            <li
+              className="nav-dropdown"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <span className="nav-dropdown-title">Products & Solutions</span>
+
+              <ul className={`nav-dropdown-menu ${dropdownOpen ? "show" : ""}`}>
+                <li><NavLink to="/products/pp-fabric">PP Fabric</NavLink></li>
+                <li><NavLink to="/products/pp-bags">PP Bags</NavLink></li>
+                <li><NavLink to="/products/monolayer-films">Monolayer Films</NavLink></li>
+                <li><NavLink to="/products/multifilament-yarn">Multifilament Yarn</NavLink></li>
+                <li><NavLink to="/products/reprocess-granules">Reprocess Granules</NavLink></li>
+              </ul>
+            </li>
+
+            <li><NavLink to="/industry">Industries</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
 
@@ -39,9 +57,31 @@ const Navbar = () => {
       {/* MOBILE SLIDE MENU */}
       <div className={`mobile-menu ${open ? "open" : ""}`}>
         <span className="close-btn" onClick={() => setOpen(false)}>×</span>
+
         <NavLink to="/home" onClick={() => setOpen(false)}>Home</NavLink>
         <NavLink to="/about" onClick={() => setOpen(false)}>About</NavLink>
-        <NavLink to="/services" onClick={() => setOpen(false)}>Services</NavLink>
+
+        {/* MOBILE DROPDOWN */}
+        <div className="mobile-dropdown">
+          <span
+            className="mobile-dropdown-title"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            Products & Solutions
+          </span>
+
+          {dropdownOpen && (
+            <div className="mobile-dropdown-menu">
+              <NavLink to="/products/pp-fabric" onClick={() => setOpen(false)}>PP Fabric</NavLink>
+              <NavLink to="/products/pp-bags" onClick={() => setOpen(false)}>PP Bags</NavLink>
+              <NavLink to="/products/monolayer-films" onClick={() => setOpen(false)}>Monolayer Films</NavLink>
+              <NavLink to="/products/multifilament-yarn" onClick={() => setOpen(false)}>Multifilament Yarn</NavLink>
+              <NavLink to="/products/reprocess-granules" onClick={() => setOpen(false)}>Reprocess Granules</NavLink>
+            </div>
+          )}
+        </div>
+
+        <NavLink to="/industry" onClick={() => setOpen(false)}>Industries</NavLink>
         <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
       </div>
 

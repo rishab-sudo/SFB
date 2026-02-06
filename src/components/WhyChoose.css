@@ -41,11 +41,12 @@
 /* CONTENT */
 .why-choose-content {
   padding: 25px 35px;
+    text-align: justify;
 }
 
 .why-choose-tag {
   color: transparent;
-  -webkit-text-stroke: 1px #b6e44b;
+  -webkit-text-stroke: 1px #0e2a34;
   display: block;
  }
 

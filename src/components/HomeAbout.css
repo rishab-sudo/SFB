@@ -7,6 +7,7 @@
 /* LEFT CONTENT */
 .home-about-content {
   max-width: 520px;
+ 
 }
 
 .home-about-tag {
@@ -21,6 +22,8 @@
 
 .home-about-description {
   color: #555;
+  text-align: justify;
+ 
  }
 
 /* POINTS */

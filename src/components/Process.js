@@ -46,7 +46,12 @@ const Process = () => {
 
   return (
     <section className="process" ref={sectionRef}>
+        <Container>
+          <h1 className="page-heading">Our Process</h1>
+           <h1 className="page-large-heading">Our Process proceeds proceeds</h1>
+        </Container>
       <Container className="process-container">
+      
         {/* DOTTED LINE */}
         <div className="process-line">
           <span className={`process-line-seg ${line1 ? "line-active" : ""}`}></span>
