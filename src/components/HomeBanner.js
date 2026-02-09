@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import { Motion, spring } from "react-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "./HomeBanner.css";
 
 const slides = [
@@ -20,7 +20,7 @@ const slides = [
     title: "Sustainable & Strong Manufacturing",
     desc: "We focus on eco-friendly processes while maintaining premium quality and consistency in every product.",
   },
-    {
+  {
     image: require("../assets/Banner/factory-solor.png"),
     title: "Sustainable & Strong Manufacturing",
     desc: "We focus on eco-friendly processes while maintaining premium quality and consistency in every product.",
@@ -68,41 +68,33 @@ const HomeBanner = () => {
       {/* OVERLAY */}
       <div className="home-banner-overlay">
         <Container>
-          <Motion
-            key={current}
-            defaultStyle={{ x: -100, opacity: 0 }}
-            style={{
-              x: spring(0, { stiffness: 60, damping: 20 }),
-              opacity: spring(1),
-            }}
-          >
-            {(style) => (
-              <div
-                className="home-banner-content"
-                style={{
-                  transform: `translateX(${style.x}px)`,
-                  opacity: style.opacity,
-                }}
-              >
-                <h1>{slides[current].title}</h1>
-                <p>{slides[current].desc}</p>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={current}
+              className="home-banner-content"
+              initial={{ x: -80, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: 80, opacity: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <h1>{slides[current].title}</h1>
+              <p>{slides[current].desc}</p>
 
-                {/* BUTTON ROW */}
-                <div className="hb-btn-row">
-                  <Link to="/products/pp-fabric" className="hb-btn hb-btn-outline">
-                    Our Products
-                  </Link>
-                  <Link to="/contact" className="hb-btn hb-btn-outline">
-                    Contact Us
-                  </Link>
-                </div>
+              {/* BUTTON ROW */}
+              <div className="hb-btn-row">
+                <Link to="/products/pp-fabric" className="hb-btn hb-btn-outline">
+                  Our Products
+                </Link>
+                <Link to="/contact" className="hb-btn hb-btn-outline">
+                  Contact Us
+                </Link>
               </div>
-            )}
-          </Motion>
+            </motion.div>
+          </AnimatePresence>
         </Container>
       </div>
 
-      {/* ✅ BOTTOM OVERLAP SECTION (SAME POSITION, NO MOTION) */}
+      {/* ✅ BOTTOM OVERLAP SECTION (NO MOTION, SAME POSITION) */}
       <div className="hb-bottom-wrapper">
         {/* LEFT DARK BOX */}
         <div className="hb-bottom-left">
