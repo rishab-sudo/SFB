@@ -7,14 +7,14 @@ import "swiper/css";
 import "./OurCustomers.css";
 
 const customers = [
-  { name: "J.K. Cement Works", logo: "/customers/jk-cement.png", tag: "Understanding your needs." },
-  { name: "Wonder Cement Limited", logo: "/customers/wonder-cement.png", tag: "Efficient production strategy." },
-  { name: "Heidelbergcement India Limited", logo: "/customers/heidelberg.png", tag: "Adhering to high standards." },
-  { name: "L.H. Sugar Factories Ltd.", logo: "/customers/lh-sugar.png", tag: "Reliable supply partner." },
-  { name: "Dhampur Sugar Mills Ltd.", logo: "/customers/dhampur-sugar.png", tag: "On-time logistics & service." },
-  { name: "Dhampur Bio Organics Ltd.", logo: "/customers/dhampur-bio.png", tag: "Quality-driven manufacturing." },
-  { name: "Dwarikesh Sugar Industries Ltd.", logo: "/customers/dwarikesh.png", tag: "Trusted industry collaboration." },
-  { name: "Shubham Goldie Masale Pvt. Ltd.", logo: "/customers/shubham-goldie.png", tag: "Consistent packaging solutions." },
+  { name: "J.K. Cement Works", img: require("../assets/icons/factory-vector.png"), tag: "Understanding your needs." },
+  { name: "Wonder Cement Limited", img: require("../assets/icons/factory-vector.png"), tag: "Efficient production strategy." },
+  { name: "Heidelbergcement India Limited", img: require("../assets/icons/factory-vector.png"), tag: "Adhering to high standards." },
+  { name: "L.H. Sugar Factories Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Reliable supply partner." },
+  { name: "Dhampur Sugar Mills Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "On-time logistics & service." },
+  { name: "Dhampur Bio Organics Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Quality-driven manufacturing." },
+  { name: "Dwarikesh Sugar Industries Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Trusted industry collaboration." },
+  { name: "Shubham Goldie Masale Pvt. Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Consistent packaging solutions." },
 ];
 
 const OurCustomers = () => {
@@ -42,7 +42,7 @@ const OurCustomers = () => {
                 {/* TOP PART */}
                 <div className="customer-card-top">
                   <div className="customer-logo">
-                    <img src={item.logo} alt={item.name} />
+                    <img src={item.img} alt={item.name} />
                   </div>
                   <h6 className="customer-name">{item.name}</h6>
                 </div>
