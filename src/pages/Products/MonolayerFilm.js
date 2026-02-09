@@ -1,31 +1,40 @@
 import React from "react";
 import ProductDetail from "../../components/ProductDetail";
+import PageTopBanner from "../../components/PageTopBanner";
 
 const MonolyerFilm = () => {
-  return (
-<ProductDetail
-  title="Monolyer Film"
-  description="High quality PP Fabric for industrial and packaging applications."
-  leftImage="/products/ppfabric-1.jpg"
-  rightImage="/products/ppfabric-2.jpg"
-  leftPoints={[
-    "High tensile strength",
-    "Lightweight and durable",
-    "Excellent tear resistance",
-    "Cost effective",
-  ]}
-  rightPoints={[
-    "Custom sizes available",
-    "Eco-friendly material",
-    "Smooth finish",
-    "Multiple applications",
-  ]}
-  bottomText="PP Fabric is widely used in packaging, agriculture, and industrial sectors due to its strength, durability, and versatility. Our manufacturing process ensures consistent quality and long-lasting performance."
-  prevLink="/products/pp-bags"
-  nextLink="/products/multifilament-yarn"
-/>
+return (
+      <>   
+       <PageTopBanner
+  title="Monolayer Films."
+  currentPage="Monolayer Films."
+  backgroundImage={require("../../assets/Banner/PP-fabric-manufactures.png")}
+/> 
+  <ProductDetail
+    title="Monolayer Films by Santosh Polyfab"
+    description="Santosh Polyfab manufactures PE monolayer films and liners used for the safe transit of food products and fine powders, designed to be compatible with different filling and discharge options."
+    leftImage="/products/MonolayerFilms-1.jpg"
+    rightImage="/products/MonolayerFilms-2.jpg"
+    leftPoints={[
+      "Provides oxygen and moisture barrier protection",
+      "Chemical resistant and anti-static properties",
+      "High tensile strength for reliable performance",
+      "Designed for minimal handling during use",
+    ]}
+    rightPoints={[
+      "Protects products from contamination",
+      "Can be loosely inserted or attached by hemming",
+      "Compatible with sewing, tying, or gluing methods",
+      "Customizable size and material as per application",
+    ]}
+    bottomText="Monolayer Films and PE liners from Santosh Polyfab are used inside bags for the safe transport of food products and fine powders. These liners help prevent liner discharge, offer protection from contamination, and can be customized in size and material to suit specific application requirements."
+    prevLink="/products/pp-bags"
+    nextLink="/products/multifilament-yarn"
+  />
+  </>
+);
 
-  );
+
 };
 
 export default MonolyerFilm;

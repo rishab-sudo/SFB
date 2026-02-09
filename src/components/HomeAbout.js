@@ -19,21 +19,19 @@ const HomeAbout = () => {
               </h2>
 
               <p className="home-about-description page-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                adiqua minim veniam quis nostrud exercitation ullamco laboris
-                sed.
+             Santosh Polyfab Pvt Ltd located in Bareilly (UP) started its production of PP woven fabric
+              and bags in 2017, spread across 220000 sq ft with state of art machinery and infrastructure, since then we have been adhering to the market trends & demand for innovative products.
               </p>
 
               <div className="home-about-points">
                 <ul className="home-about-list">
                   <li className="home-about-list-item">Innovative Packaging</li>
-                  <li className="home-about-list-item">Creative Solutions</li>
+                  <li className="home-about-list-item">On-time Delivery.</li>
                   <li className="home-about-list-item">Customer Satisfaction</li>
                 </ul>
 
                 <ul className="home-about-list">
-                  <li className="home-about-list-item">Offers Significant Value</li>
+                  <li className="home-about-list-item">Quality Conscious product.</li>
                   <li className="home-about-list-item">Continuous Improvement</li>
                   <li className="home-about-list-item">
                     Conserving Natural Resources
@@ -41,7 +39,7 @@ const HomeAbout = () => {
                 </ul>
               </div>
 
-              <Link to ="/about"><button className="home-about-btn">About Us</button></Link>
+              <Link to ="/about"><button className="home-about-btn">Know More</button></Link>
             </div>
           </Col>
 

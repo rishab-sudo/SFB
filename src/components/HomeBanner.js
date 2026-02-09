@@ -1,50 +1,133 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import { Motion, spring } from "react-motion";
 import "./HomeBanner.css";
 
+const slides = [
+  {
+    image: require("../assets/Banner/factory1.png"),
+    title: "Reliable Packaging Materials, Built to Perform",
+    desc: "At Santosh Polyfab, we manufacture PP fabric, PP bags, monolayer films, multifilament yarn, and reprocess granules with uncompromising quality.",
+  },
+  {
+    image: require("../assets/Banner/factory2.png"),
+    title: "High Quality PP Bags for Every Industry",
+    desc: "Our PP bags are designed for strength, durability and long-lasting performance across multiple industries.",
+  },
+  {
+    image: require("../assets/Banner/factory3.png"),
+    title: "Sustainable & Strong Manufacturing",
+    desc: "We focus on eco-friendly processes while maintaining premium quality and consistency in every product.",
+  },
+    {
+    image: require("../assets/Banner/factory-solor.png"),
+    title: "Sustainable & Strong Manufacturing",
+    desc: "We focus on eco-friendly processes while maintaining premium quality and consistency in every product.",
+  },
+];
+
 const HomeBanner = () => {
+  const [current, setCurrent] = useState(0);
+
+  const [design, setDesign] = useState(0);
+  const [quality, setQuality] = useState(0);
+  const [sustainable, setSustainable] = useState(0);
+
+  // Auto slide change
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Counter animation
+  useEffect(() => {
+    const animate = (setter, target) => {
+      let start = 0;
+      const interval = setInterval(() => {
+        start += 1;
+        setter(start);
+        if (start >= target) clearInterval(interval);
+      }, 20);
+    };
+
+    animate(setDesign, 90);
+    animate(setQuality, 95);
+    animate(setSustainable, 95);
+  }, []);
+
   return (
-    <section className="home-banner">
+    <section
+      className="home-banner"
+      style={{
+        backgroundImage: `url(${slides[current].image})`,
+      }}
+    >
+      {/* OVERLAY */}
       <div className="home-banner-overlay">
         <Container>
-          <div className="home-banner-content">
-            <h1>Engineering Quality That Performs</h1>
-            <p>
-              Delivering precision-driven manufacturing solutions backed by
-              robust infrastructure, skilled professionals, and uncompromising
-              quality standards.
-            </p>
-          </div>
+          <Motion
+            key={current}
+            defaultStyle={{ x: -100, opacity: 0 }}
+            style={{
+              x: spring(0, { stiffness: 60, damping: 20 }),
+              opacity: spring(1),
+            }}
+          >
+            {(style) => (
+              <div
+                className="home-banner-content"
+                style={{
+                  transform: `translateX(${style.x}px)`,
+                  opacity: style.opacity,
+                }}
+              >
+                <h1>{slides[current].title}</h1>
+                <p>{slides[current].desc}</p>
+
+                {/* BUTTON ROW */}
+                <div className="hb-btn-row">
+                  <Link to="/products/pp-fabric" className="hb-btn hb-btn-outline">
+                    Our Products
+                  </Link>
+                  <Link to="/contact" className="hb-btn hb-btn-outline">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            )}
+          </Motion>
         </Container>
       </div>
 
-      {/* BOTTOM OVERLAP SECTION */}
+      {/* ✅ BOTTOM OVERLAP SECTION (SAME POSITION, NO MOTION) */}
       <div className="hb-bottom-wrapper">
         {/* LEFT DARK BOX */}
         <div className="hb-bottom-left">
           <div className="hb-progress">
-            <div className="hb-circle">95%</div>
+            <div className="hb-circle">{design}%</div>
+            <p>Design</p>
+          </div>
+
+          <div className="hb-progress">
+            <div className="hb-circle">{quality}%</div>
             <p>Quality</p>
           </div>
 
           <div className="hb-progress">
-            <div className="hb-circle">93%</div>
+            <div className="hb-circle">{sustainable}%</div>
             <p>Sustainable</p>
-          </div>
-
-          <div className="hb-progress">
-            <div className="hb-circle">90%</div>
-            <p>Design</p>
           </div>
         </div>
 
         {/* RIGHT WHITE BOX */}
         <div className="hb-bottom-right">
-          <h5>Trusted By Brand Like</h5>
+          <h5>Certified</h5>
 
           <div className="hb-brands-slider">
             <div className="hb-brands-track">
-              {/* SLIDE 1 */}
               <div className="brand-item">
                 <img src="/brand1.png" alt="HouseDesign" />
                 <span>HouseDesign</span>
@@ -60,7 +143,7 @@ const HomeBanner = () => {
                 <span>StarScraft</span>
               </div>
 
-              {/* DUPLICATE FOR INFINITE LOOP */}
+              {/* duplicate for smooth loop */}
               <div className="brand-item">
                 <img src="/brand1.png" alt="HouseDesign" />
                 <span>HouseDesign</span>
@@ -72,7 +155,7 @@ const HomeBanner = () => {
               </div>
 
               <div className="brand-item">
-                <img src="/brand3.png" alt="StarScraft" />
+                <img src="/brand3.png" alt="StarSccraft" />
                 <span>StarScraft</span>
               </div>
             </div>

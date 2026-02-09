@@ -44,7 +44,7 @@
 }
 
 /* ===== SECTION 2 ===== */
-.our-quality {
+/* .our-quality {
   margin-top: 3.5%;
   padding: 25px 0;
   background: #f7f9fb;
@@ -85,7 +85,7 @@
   margin-bottom: 30px;
 }
 
-/* BOXES */
+*/
 .our-quality-boxes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -110,15 +110,16 @@
   font-size: 15px;
   font-weight: 600;
   color: #0e2a34;
-}
+} 
 /* ===== SECTION 3 : DIRECTORS ===== */
 .directors {
-  padding: 100px 0;
+  padding: 65px 0;
   background: #ffffff;
 }
 
 .directors-container {
   width: 100%;
+  justify-content: space-between !important;
 }
 
 .directors-row {
@@ -151,16 +152,27 @@
   font-size: 16px;
   line-height: 1.8;
   color: #555;
+  text-align: justify;
 }
 
 .directors-image-wrapper {
   width: 100%;
-}
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ }
 
+ .directors-image2{
+margin-right: auto !important;
+margin-left: 0px !important;
+ }
 .directors-image {
-  width: 100%;
+  width: 80%;
+  height: 325px;
   border-radius: 6px;
   object-fit: cover;
+  margin-left: auto ;
+
 }
 
 /* ===== RESPONSIVE ===== */
@@ -198,4 +210,23 @@
   .directors-heading {
     font-size: 30px;
   }
+  .directors-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .directors-image2{
+margin: auto !important;
+
+ }
+.directors-image {
+  width: 100%;
+  height: 325px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin: auto !important;
+
+}
 }

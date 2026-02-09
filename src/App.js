@@ -21,7 +21,7 @@ import ReprocessGranulesPage from './pages/Products/Granules';
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <Navbar />
       <AppButtons />
 
@@ -44,7 +44,7 @@ function App() {
       </Routes>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

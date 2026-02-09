@@ -1,0 +1,71 @@
+.customer {
+  padding: 40px 0;
+  /* background: #f7f9fb; */
+  background-color: #286b940b;
+}
+
+.customer-heading {
+  color: #286a94;
+  }
+
+/* CARD */
+.customer-card {
+  background: #ffffff;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* TOP PART */
+.customer-card-top {
+  padding: 18px 16px 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* LOGO */
+.customer-logo img {
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: contain;
+}
+
+/* NAME */
+.customer-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0e2a34;
+  margin: 0;
+}
+
+/* DIVIDER */
+.customer-divider {
+  height: 1px;
+  background: #e6e6e6;
+  width: 100%;
+}
+
+/* TAGLINE */
+.customer-tagline {
+  padding: 12px 16px 16px 16px;
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .customer {
+    padding: 60px 0;
+  }
+
+  .customer-heading {
+    font-size: 28px;
+  }
+}

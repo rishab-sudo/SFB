@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+.App{
+   font-family: "Montserrat", sans-serif !important;
 }
 
 .page-heading{
@@ -17,5 +17,6 @@ text-transform: capitalize;
 }
 .page-description{
   line-height: normal;
-  font-size: 18px;
+  font-size: 17.2px;
+  font-weight: 500;
 }

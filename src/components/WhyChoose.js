@@ -12,13 +12,15 @@ const WhyChoose = () => {
             <div className="why-choose-image-wrapper">
               <img
                 src={require("../assets/Banner/sfb-demo-bg.jpg")}
-                alt="Why Choose Us"
+                alt="Santosh Polyfab Packaging Manufacturing"
                 className="why-choose-image"
               />
 
               <div className="why-choose-image-box">
-                <h4>Trusted Packaging Partner</h4>
-                <p>Delivering quality & innovation across industries</p>
+                <h4>Trusted Packaging Manufacturing Partner</h4>
+                <p>
+                  Supplying high-quality PP fabric, PP bags, films, yarn, and granules to industries
+                </p>
               </div>
             </div>
           </Col>
@@ -26,34 +28,43 @@ const WhyChoose = () => {
           {/* RIGHT CONTENT */}
           <Col lg={6} md={12}>
             <div className="why-choose-content">
-              <span className="why-choose-tag page-heading">Why Us</span>
+              <span className="why-choose-tag page-heading">Why Santosh Polyfab</span>
 
               <h2 className="why-choose-heading page-large-heading">
-                Accelerating Innovations <br />
-                In Packaging
+                Driving Innovation 
+                In Industrial Packaging
               </h2>
 
               <p className="why-choose-description page-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                adiqua minim veniam quis nostrud exercitation ullamco laboris
-                sed.
+                Santosh Polyfab is a trusted manufacturer and supplier of PP fabric, PP bags,
+                monolayer films, multifilament yarn, and reprocess granules. With modern
+                infrastructure and a skilled team, we deliver consistent quality, reliable supply,
+                and cost-effective material solutions for multiple industries.
               </p>
 
               <div className="why-choose-features">
                 <div className="why-choose-feature">
-                  <h5>Best Quality Of Packaging</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <h5>High-Quality Manufacturing</h5>
+                  <p>
+                    We follow strict quality control processes to ensure durable, reliable, and
+                    performance-driven packaging materials.
+                  </p>
                 </div>
 
                 <div className="why-choose-feature">
-                  <h5>Creative Packaging</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <h5>Advanced Production Facilities</h5>
+                  <p>
+                    Our modern manufacturing setup helps us deliver consistent output and meet
+                    large-scale industrial requirements.
+                  </p>
                 </div>
 
                 <div className="why-choose-feature">
-                  <h5>Environmentally Friendly</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <h5>Sustainable & Responsible Approach</h5>
+                  <p>
+                    We focus on efficient processes and reprocess granules to support eco-friendly
+                    and responsible manufacturing practices.
+                  </p>
                 </div>
               </div>
             </div>
@@ -65,34 +76,45 @@ const WhyChoose = () => {
       <Container className="whyus-box-container">
         <div className="whyus-box-row">
           <div className="whyus-box-item">
-            <img src="/icons/quality.png" alt="Quality" className="whyus-box-icon" />
+            <img src= {require("../assets/icons/Quality.png")} alt="Premium Quality" className="whyus-box-icon" />
             <div className="whyus-box-text">
-              <h5>Premium Quality</h5>
-              <p>We maintain the highest standards in every product we deliver.</p>
+              <h5>Premium Quality Materials</h5>
+              <p>
+                We ensure high standards in PP fabric, PP bags, films, yarn, and granules for
+                long-lasting performance.
+              </p>
             </div>
           </div>
 
           <div className="whyus-box-item">
-            <img src="/icons/innovation.png" alt="Innovation" className="whyus-box-icon" />
+            <img src= {require("../assets/icons/innovative solution.png")} alt="Manufacturing Expertise" className="whyus-box-icon" />
             <div className="whyus-box-text">
-              <h5>Innovative Solutions</h5>
-              <p>Creative and modern packaging solutions for your brand.</p>
+              <h5>Manufacturing Expertise</h5>
+              <p>
+                Years of industry experience and modern technology help us deliver reliable
+                packaging solutions.
+              </p>
             </div>
           </div>
 
           <div className="whyus-box-item">
-            <img src="/icons/eco.png" alt="Eco Friendly" className="whyus-box-icon" />
+            <img src= {require("../assets/icons/eco friendly.png")} alt="Sustainable Manufacturing" className="whyus-box-icon" />
             <div className="whyus-box-text">
-              <h5>Eco Friendly</h5>
-              <p>We focus on sustainable and environmentally safe materials.</p>
+              <h5>Sustainable Manufacturing</h5>
+              <p>
+                We promote responsible production through efficient processes and reprocessed
+                materials.
+              </p>
             </div>
           </div>
 
           <div className="whyus-box-item">
-            <img src="/icons/support.png" alt="Support" className="whyus-box-icon" />
+            <img src= {require("../assets/icons/support.png")} alt="Reliable Supply Support" className="whyus-box-icon" />
             <div className="whyus-box-text">
-              <h5>Reliable Support</h5>
-              <p>Dedicated support team to help you at every step.</p>
+              <h5>Reliable Supply & Support</h5>
+              <p>
+                Our team ensures timely delivery and dependable support for all industrial clients.
+              </p>
             </div>
           </div>
         </div>

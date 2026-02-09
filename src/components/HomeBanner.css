@@ -1,7 +1,10 @@
 .home-banner {
   position: relative;
   min-height: 620px;
-  background: url("../assets/Banner/sfb-demo-bg.jpg") center/cover no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.8s ease-in-out;
 }
 
 .home-banner-overlay {
@@ -27,25 +30,76 @@
   line-height: 1.7;
   opacity: 0.9;
 }
+/* BUTTON ROW */
+.hb-btn-row {
+  margin-top: 25px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* BASE BUTTON */
+.hb-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* OUTLINE STYLE */
+.hb-btn-outline {
+  border: 2px solid #ffffff;
+  color: #fff;
+  background: transparent;
+}
+
+/* HOVER = FILL */
+.hb-btn-outline:hover {
+  background: #286a94;
+  border: none !important;
+  color: #fff;
+}
 
 /* BOTTOM WRAPPER */
 .hb-bottom-wrapper {
   position: absolute;
   bottom: -145px;
-  left: 6%;
-  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);   /* ✅ THIS IS THE FIX */
+  width: 100%;
+  max-width: 100%;
   display: flex;
   z-index: 20;
+  padding: 0px;
 }
+
 
 /* LEFT DARK BOX */
 .hb-bottom-left {
-  width: 65%;
+  width: 75%;
   background: #0e2a34;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 32px 20px;
+}
+
+/* RIGHT WHITE BOX */
+.hb-bottom-right {
+  width: 35%;
+  padding: 65px 0 0 32px;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.hb-bottom-right h5 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px !important;
 }
 
 .hb-progress {
@@ -64,7 +118,7 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  border: 6px solid #b6e44b;
+  border: 6px solid #286a94;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,34 +126,18 @@
   font-weight: 700;
 }
 
-/* RIGHT WHITE BOX */
-.hb-bottom-right {
-  width: 35%;
-  /* background: #ffffff; */
-  /* background-color: antiquewhite; */
-  padding: 28px 32px;
-  padding-top: 80px !important;
-  overflow: hidden;
-  margin-left: auto;
-
-}
-
-.hb-bottom-right h5 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 18px;
-  color: #111;
-}
-
 /* SLIDER */
 .hb-brands-slider {
-    overflow: hidden;
+  overflow: hidden;
   width: 100%;
 }
 
+/* TRACK */
 .hb-brands-track {
   display: flex;
   gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
   animation: brandSlide 18s linear infinite;
 }
 
@@ -107,9 +145,8 @@
 .brand-item {
   min-width: 120px;
   display: flex;
-  flex-direction: column;   /* FIX: text below image */
-  justify-content: baseline;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   gap: 8px;
   font-size: 14px;
   font-weight: 600;
@@ -131,12 +168,13 @@
   }
 }
 
+
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .hb-bottom-wrapper {
     flex-direction: column;
     width: 90%;
-    left: 5%;
+    left: 50%;
   }
 
   .hb-bottom-left,

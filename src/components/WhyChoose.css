@@ -20,17 +20,19 @@
 /* IMAGE BOX */
 .why-choose-image-box {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 1px;
+  left: 1px;
   background: #0e2a34;
   color: #fff;
-  padding: 24px 28px;
-  max-width: 280px;
+  padding: 50px 28px;
+  max-width: 60%;
+  height: fit-content;
 }
 
 .why-choose-image-box h4 {
   font-size: 18px;
-  margin-bottom: 6px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .why-choose-image-box p {
@@ -62,7 +64,7 @@
 .why-choose-features {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 2.5px;
 }
 
 .why-choose-feature h5 {
@@ -79,7 +81,7 @@
 }
 /* ===== WHY US BOXES ===== */
 .whyus-box-container {
-  margin-top: 50px;
+  margin-top: 75px;
 }
 
 .whyus-box-row {
@@ -103,9 +105,10 @@
 
 /* ICON */
 .whyus-box-icon {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  /* margin: auto !important; */
 }
 
 /* TEXT */
@@ -132,7 +135,9 @@
   .why-choose-content {
     padding: 40px 20px;
   }
-
+.whyus-box-container {
+  margin-top: 75px;
+}
   .why-choose-heading {
     font-size: 34px;
   }
@@ -151,7 +156,9 @@
   .why-choose {
     padding: 70px 0;
   }
-
+.whyus-box-container {
+  margin-top: 75px;
+}
   .why-choose-image-box {
     position: relative;
     left: 0;

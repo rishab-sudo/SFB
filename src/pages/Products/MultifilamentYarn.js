@@ -1,31 +1,40 @@
 import React from "react";
 import ProductDetail from "../../components/ProductDetail";
+import PageTopBanner from "../../components/PageTopBanner";
 
 const MultifilamentYarn = () => {
-  return (
-<ProductDetail
-  title="Multifilament Yarn"
-  description="High quality PP Fabric for industrial and packaging applications."
-  leftImage="/products/PPBages-1.jpg"
-  rightImage="/products/PPBages-2.jpg"
-  leftPoints={[
-    "High tensile strength",
-    "Lightweight and durable",
-    "Excellent tear resistance",
-    "Cost effective",
-  ]}
-  rightPoints={[
-    "Custom sizes available",
-    "Eco-friendly material",
-    "Smooth finish",
-    "Multiple applications",
-  ]}
-  bottomText="PP Fabric is widely used in packaging, agriculture, and industrial sectors due to its strength, durability, and versatility. Our manufacturing process ensures consistent quality and long-lasting performance."
-  prevLink="/products/monolayer-films"
-  nextLink="/products/reprocess-granules"
+return (
+  <>
+         <PageTopBanner
+title="Multifilament Yarn."
+  currentPage="Multifilament Yarn"
+  backgroundImage={require("../../assets/Banner/PP-fabric-manufactures.png")}
 />
+  <ProductDetail
+    title="Multifilament Yarn by Santosh Polyfab"
+    description="Multifilament yarn plays a crucial role in packaging, especially in bag-closing applications, where it ensures strong and secure stitching for reliable and stable packaging."
+    leftImage="/products/MultifilamentYarn-1.jpg"
+    rightImage="/products/MultifilamentYarn-2.jpg"
+    leftPoints={[
+      "High strength and extra smooth finish under strict supervision",
+      "Ensures strong and secure stitches for bag closing",
+      "Durable and resistant for reliable industrial use",
+      "Contributes to the integrity and stability of packaged goods",
+    ]}
+    rightPoints={[
+      "Intermingled and twisted PP multifilament yarn available",
+      "Manufactured in various colors with medium and high tenacity",
+      "Used in weaving, braiding, twisting, and sewing",
+      "Suitable for ropes, nets, slings, webbing, belts, and filtration",
+    ]}
+    bottomText="At Santosh Polyfab, multifilament yarn is manufactured to meet international standards with high strength and smooth finish. It is widely used for bag closing, sewing, weaving, and various industrial applications such as ropes, nets, webbing, and filtration, ensuring durability and reliable performance."
+    prevLink="/products/monolayer-films"
+    nextLink="/products/reprocess-granules"
+  />
+  </>
+);
 
-  );
+
 };
 
 export default MultifilamentYarn;

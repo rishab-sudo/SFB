@@ -45,85 +45,78 @@ const Process = () => {
   }, [visible]);
 
   return (
-    <section className="process" ref={sectionRef}>
-        <Container>
-          <h1 className="page-heading">Our Process</h1>
-           <h1 className="page-large-heading">Our Process proceeds proceeds</h1>
-        </Container>
-      <Container className="process-container">
-      
-        {/* DOTTED LINE */}
-        <div className="process-line">
-          <span className={`process-line-seg ${line1 ? "line-active" : ""}`}></span>
-          <span className={`process-line-seg ${line2 ? "line-active" : ""}`}></span>
-          <span className={`process-line-seg ${line3 ? "line-active" : ""}`}></span>
-        </div>
+  <section className="process" ref={sectionRef}>
+  <Container>
+    <h1 className="page-heading">Our Process</h1>
+    <h1 className="page-large-heading">From Raw Material to Reliable Supply</h1>
+  </Container>
 
-        {/* STEP 1 */}
-        <div
-          className={`process-item process-from-left ${
-            visible ? "process-animate" : ""
-          }`}
-          style={{ animationDelay: "0s" }}
-        >
-          <div className="process-circle">
-            <FaLightbulb className="process-icon"/>
-          </div>
-          <div className="process-text">
-            <h5>Step 1</h5>
-            <p>Understanding your packaging needs</p>
-          </div>
-        </div>
+  <Container className="process-container">
+    {/* DOTTED LINE */}
+    <div className="process-line">
+      <span className={`process-line-seg ${line1 ? "line-active" : ""}`}></span>
+      <span className={`process-line-seg ${line2 ? "line-active" : ""}`}></span>
+      <span className={`process-line-seg ${line3 ? "line-active" : ""}`}></span>
+    </div>
 
-        {/* STEP 2 */}
-        <div
-          className={`process-item process-from-top ${
-            visible ? "process-animate" : ""
-          }`}
-          style={{ animationDelay: "1s" }}
-        >
-          <div className="process-circle">
-            <FaCogs className="process-icon"/>
-          </div>
-          <div className="process-text">
-            <h5>Step 2</h5>
-            <p>Designing and engineering the solution</p>
-          </div>
-        </div>
+    {/* STEP 1 */}
+    <div
+      className={`process-item process-from-left ${visible ? "process-animate" : ""}`}
+      style={{ animationDelay: "0s" }}
+    >
+      <div className="process-circle">
+        <FaLightbulb className="process-icon" />
+      </div>
+      <div className="process-text">
+        <h5>Requirement Analysis</h5>
+        <p>We understand your industry needs and select the right PP fabric, bags, films, yarn, or granules.</p>
+      </div>
+    </div>
 
-        {/* STEP 3 */}
-        <div
-          className={`process-item process-from-bottom ${
-            visible ? "process-animate" : ""
-          }`}
-          style={{ animationDelay: "2s" }}
-        >
-          <div className="process-circle">
-            <FaBoxOpen className="process-icon"/>
-          </div>
-          <div className="process-text">
-            <h5>Step 3</h5>
-            <p>Manufacturing with quality checks</p>
-          </div>
-        </div>
+    {/* STEP 2 */}
+    <div
+      className={`process-item process-from-top ${visible ? "process-animate" : ""}`}
+      style={{ animationDelay: "1s" }}
+    >
+      <div className="process-circle">
+        <FaCogs className="process-icon" />
+      </div>
+      <div className="process-text">
+        <h5>Process Planning</h5>
+        <p>Our team plans specifications, production flow, and quality parameters for consistent output.</p>
+      </div>
+    </div>
 
-        {/* STEP 4 */}
-        <div
-          className={`process-item process-from-left ${
-            visible ? "process-animate" : ""
-          }`}
-          style={{ animationDelay: "3s" }}
-        >
-          <div className="process-circle">
-            <FaTruck className="process-icon"/>
-          </div>
-          <div className="process-text">
-            <h5>Step 4</h5>
-            <p>Delivery and customer satisfaction</p>
-          </div>
-        </div>
-      </Container>
-    </section>
+    {/* STEP 3 */}
+    <div
+      className={`process-item process-from-bottom ${visible ? "process-animate" : ""}`}
+      style={{ animationDelay: "2s" }}
+    >
+      <div className="process-circle">
+        <FaBoxOpen className="process-icon" />
+      </div>
+      <div className="process-text">
+        <h5>Manufacturing & Quality Control</h5>
+        <p>We manufacture with strict checks to ensure durable, high-performance packaging materials.</p>
+      </div>
+    </div>
+
+    {/* STEP 4 */}
+    <div
+      className={`process-item process-from-left ${visible ? "process-animate" : ""}`}
+      style={{ animationDelay: "3s" }}
+    >
+      <div className="process-circle">
+        <FaTruck className="process-icon" />
+      </div>
+      <div className="process-text">
+        <h5>Timely Delivery & Support</h5>
+        <p>We ensure reliable supply, on-time dispatch, and ongoing support for industrial clients.</p>
+      </div>
+    </div>
+  </Container>
+</section>
+
   );
 };
 

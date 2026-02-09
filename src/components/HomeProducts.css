@@ -1,7 +1,7 @@
 .home-products {
   margin-top: 3.5%;
   padding: 25px 0;
-  background: #f9f9f9;
+  background-color: #286b940b;
 }
 
 /* HEADER */
@@ -22,22 +22,33 @@
   color: #0e2a34;
 }
 
-/* ARROWS */
+/* ARROWS WRAPPER */
 .home-products-arrows {
   display: flex;
   gap: 10px;
-  border: 1px solid #ddd;
-  padding: 6px;
 }
 
+/* EACH ARROW BUTTON AS SEPARATE BOX */
 .home-products-arrow {
-  background: transparent;
-  border: none;
+  background: #fff;
+  border: 1px solid #ddd;
   font-size: 20px;
   cursor: pointer;
   width: 40px;
   height: 40px;
+  border-radius: 4px;       /* optional: thoda smooth look */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
 }
+
+.home-products-arrow:hover {
+  background: #286a94;
+  color: #fff;
+  border-color: #286a94;
+}
+
 
 /* CARD */
 .home-products-card {
@@ -60,7 +71,13 @@
   object-fit: cover;
   transition: transform 0.5s ease;
 }
-
+.home-products-h4{
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.home-products-p{
+  font-weight: 600;
+}
 /* HOVER OVERLAY */
 .home-products-card-overlay {
   position: absolute;
@@ -70,8 +87,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 25px;
-
-  opacity: 0;
+ opacity: 0;
   transition: 0.4s ease;
 }
 
@@ -84,8 +100,9 @@
 }
 
 .home-products-card-overlay li {
+  list-style: disc;   /* ● dot before text */
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* HOVER EFFECT */

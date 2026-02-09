@@ -10,38 +10,68 @@ import "./HomeProducts.css";
 const products = [
   {
     id: 1,
-    title: "Corrugated Boxes",
-    subtitle: "Durable Packaging",
+    title: "PP Fabric",
+    subtitle: "Customized Industrial Fabric",
     image: require("../assets/Banner/sfb-demo-bg.jpg"),
-    points: ["High Strength", "Eco Friendly", "Custom Sizes"],
+    link: "/products/pp-fabric",
+    points: [
+      "Available in woven, laminated & unlaminated types",
+      "Fully customizable: size, GSM, color, mesh & UV resistance",
+      "Widely used for sacks, wrapping & industrial packaging",
+      "Recyclable and eco-friendly material",
+    ],
   },
   {
     id: 2,
-    title: "Mono Cartons",
-    subtitle: "Premium Look",
- image: require("../assets/Banner/sfb-demo-bg.jpg"),
-    points: ["Attractive Finish", "Lightweight", "Brand Focused"],
+    title: "PP Bags",
+    subtitle: "Strong & Reliable Packaging",
+    image: require("../assets/Banner/sfb-demo-bg.jpg"),
+    link: "/products/pp-bags",
+    points: [
+      "Laminated, unlaminated & recycled bags available",
+      "Used in cement, sugar, flour, rice & food grain industries",
+      "High load-bearing strength and durable stitching",
+      "Reusable and 100% recyclable polypropylene material",
+    ],
   },
   {
     id: 3,
-    title: "Rigid Boxes",
-    subtitle: "Luxury Packaging",
+    title: "Monolayer Films",
+    subtitle: "Protective PE Liners & Films",
     image: require("../assets/Banner/sfb-demo-bg.jpg"),
-    points: ["Strong Build", "Premium Feel", "Custom Design"],
+    link: "/products/monolayer-films",
+    points: [
+      "Provides oxygen & moisture barrier protection",
+      "Chemical resistant and anti-static properties",
+      "High tensile strength with minimal handling required",
+      "Custom sizes and materials as per application",
+    ],
   },
   {
     id: 4,
-    title: "Printed Boxes",
-    subtitle: "Brand Visibility",
+    title: "Multifilament Yarn",
+    subtitle: "High Strength Industrial Yarn",
     image: require("../assets/Banner/sfb-demo-bg.jpg"),
-    points: ["High Quality Print", "Vibrant Colors", "Custom Artwork"],
+    link: "/products/multifilament-yarn",
+    points: [
+      "High strength, smooth finish and consistent quality",
+      "Used for sewing, weaving, braiding & bag closing",
+      "Available in multiple colors with medium & high tenacity",
+      "Suitable for ropes, nets, slings, webbing & filtration",
+    ],
   },
   {
     id: 5,
-    title: "Eco Packaging",
-    subtitle: "Sustainable Choice",
- image: require("../assets/Banner/sfb-demo-bg.jpg"),
-    points: ["Recyclable", "Low Carbon", "Cost Effective"],
+    title: "Reprocess Granules",
+    subtitle: "Sustainable Raw Material",
+    image: require("../assets/Banner/sfb-demo-bg.jpg"),
+    link: "/products/reprocess-granules",
+    points: [
+      "Made from recycled waste to support circular economy",
+      "Used in manufacturing PP fabric and PP bags",
+      "Available in multiple colors and MFI as per requirement",
+      "Cost-effective and eco-friendly material solution",
+    ],
   },
 ];
 
@@ -109,9 +139,9 @@ const HomeProducts = () => {
 
                   {/* CONTENT */}
                   <div className="home-products-card-content">
-                    <h4>{item.title}</h4>
-                    <p>{item.subtitle}</p>
-                    <a href="/products" className="home-products-readmore">
+                    <h4 className="home-products-h4">{item.title}</h4>
+                    <p className="home-products-p">{item.subtitle}</p>
+                    <a href={item.link} className="home-products-readmore">
                       Read More →
                     </a>
                   </div>

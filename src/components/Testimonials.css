@@ -1,13 +1,13 @@
 .review-overlay-container {
-  background-image: url('../assets/Banner/sfb-demo-bg.jpg');
+  background-image: url('../assets/Banner/PP-fabric-manufactures.png');
   background-size: cover;
   background-position: center;
   padding: 5.5%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 65vh;
 }
 
 .review-wrapper {
@@ -20,7 +20,7 @@
   background-color: rgba(0, 0, 0, 0.75);
   max-width: 50%;
   width: 100%;
-  height: 450px;
+  height: 350px;
   padding: 35px;
   color: #fff;
   border-radius: 10px;

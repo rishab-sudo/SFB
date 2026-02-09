@@ -2,10 +2,17 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import ContactForm from "../components/ContactForm";
+import PageTopBanner from "../components/PageTopBanner";
 import "./ContactUs.css";
 
 const ContactUs = () => {
   return (
+    <>
+     <PageTopBanner
+title="Contact US"
+  currentPage="Contact US"
+  backgroundImage={require("../assets/Banner/sfb-demo-bg.jpg")}
+/>
     <section className="contact-us">
       <Container>
         {/* TOP INFO BOXES */}
@@ -16,7 +23,7 @@ const ContactUs = () => {
                 <FaPhoneAlt />
               </div>
               <h5 className="contact-us-box-title">Phone</h5>
-              <p className="contact-us-box-main">(+91) 9740990558</p>
+              <p className="contact-us-box-main">(+91) 8447620822</p>
               <p className="contact-us-box-desc">
                 Call us for any product or service related queries.
               </p>
@@ -29,7 +36,7 @@ const ContactUs = () => {
                 <FaEnvelope />
               </div>
               <h5 className="contact-us-box-title">Email</h5>
-              <p className="contact-us-box-main">admin@polyfab.in</p>
+              <p className="contact-us-box-main"> santoshpolyfab@gmail.com</p>
               <p className="contact-us-box-desc">
                 Send us your requirements and we’ll get back to you.
               </p>
@@ -43,7 +50,7 @@ const ContactUs = () => {
               </div>
               <h5 className="contact-us-box-title">Address</h5>
               <p className="contact-us-box-main">
-                Bangalore, Karnataka, India
+              Vill: Navadavan, Faridpur-243503. Bareilly (UP)
               </p>
               <p className="contact-us-box-desc">
                 Visit our office for detailed discussions and meetings.
@@ -72,6 +79,7 @@ const ContactUs = () => {
         </div>
       </Container>
     </section>
+    </>
   );
 };
 

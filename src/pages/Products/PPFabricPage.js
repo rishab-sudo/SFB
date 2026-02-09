@@ -1,31 +1,39 @@
 import React from "react";
 import ProductDetail from "../../components/ProductDetail";
+import PageTopBanner from "../../components/PageTopBanner";
 
 const PPFabric = () => {
-  return (
-<ProductDetail
+return (
+  <>    <PageTopBanner
   title="PP Fabric"
-  description="High quality PP Fabric for industrial and packaging applications."
-  leftImage="/products/ppfabric-1.jpg"
-  rightImage="/products/ppfabric-2.jpg"
-  leftPoints={[
-    "High tensile strength",
-    "Lightweight and durable",
-    "Excellent tear resistance",
-    "Cost effective",
-  ]}
-  rightPoints={[
-    "Custom sizes available",
-    "Eco-friendly material",
-    "Smooth finish",
-    "Multiple applications",
-  ]}
-  bottomText="PP Fabric is widely used in packaging, agriculture, and industrial sectors due to its strength, durability, and versatility. Our manufacturing process ensures consistent quality and long-lasting performance."
-  prevLink="/products/pp-fabric"
-  nextLink="/products/monolayer-films"
+  currentPage="PP Fabric"
+  backgroundImage={require("../../assets/Banner/PP-fabric-manufactures.png")}
 />
+  <ProductDetail
+    title="PP Fabric by Santosh Polyfab"
+    description="Santosh Polyfab produces PP fabric in woven, laminated, and unlaminated forms, each manufactured to suit specific industry requirements and applications."
+    leftImage="/products/PPFabric-1.jpg"
+    rightImage="/products/PPFabric-2.jpg"
+    leftPoints={[
+      "High tensile strength for heavy-duty use",
+      "Lightweight yet durable polypropylene material",
+      "Excellent tear and abrasion resistance",
+      "Cost-effective solution for bulk packaging",
+    ]}
+    rightPoints={[
+      "Available in multiple GSM and custom sizes",
+      "Uniform weaving and smooth surface finish",
+      "Suitable for packaging, agriculture, and industrial uses",
+      "Manufactured with strict quality control standards",
+    ]}
+    bottomText="PP Fabric from Santosh Polyfab is widely used for manufacturing sacks and for wrapping applications across various industries. It is recyclable and designed to minimize environmental impact, and can be fully customized in terms of size, GSM, colour, mesh, UV resistance, and other specifications as per customer requirements."
+    prevLink="/products/pp-bags"
+    nextLink="/products/monolayer-films"
+  />
+  </>
+);
 
-  );
+
 };
 
 export default PPFabric;

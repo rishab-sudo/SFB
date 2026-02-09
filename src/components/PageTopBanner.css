@@ -1,0 +1,64 @@
+.page-top-banner {
+  width: 100%;
+  height: 325px;
+  background-color: #286a94;
+  /* background: url("../assets/Banner//PP-fabric-manufactures.png") center/cover no-repeat; */
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.page-top-banner-overlay {
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.9);  */
+  display: flex;
+  align-items: center;
+}
+
+.page-top-banner-content {
+  text-align: center;
+  color: #fff;
+}
+
+.page-top-banner-title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.page-top-banner-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #286a94;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-top-banner-home {
+  color: #286a94;
+  text-decoration: none;
+}
+
+.page-top-banner-home:hover {
+  text-decoration: underline;
+}
+
+.page-top-banner-separator {
+  color: #286a94;
+}
+
+.page-top-banner-current {
+  color: #0e2a34;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page-top-banner-title {
+    font-size: 28px;
+  }
+}

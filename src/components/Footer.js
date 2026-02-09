@@ -13,12 +13,8 @@ const Footer = () => {
              <div className="footer-logo">
             <img src={require("../assets/logo22.png")} alt="Logo" />
           </div>
-              <p>
-                We operate from a robust infrastructure, divided into key
-                departments like procurement, production, quality control, and
-                sales. Our skilled professionals ensure seamless operations,
-                delivering excellence across every process.
-              </p>
+Santosh Polyfab operates with a modern manufacturing infrastructure and dedicated 
+teams for procurement, production, quality control, and sales, ensuring reliable supply and consistent quality in every product we deliver.
             </Col>
 
             {/* QUICK LINKS */}
@@ -28,8 +24,8 @@ const Footer = () => {
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
+                <li><a href="/industry">Industries</a></li>
                 <li><a href="/contact">Contact Us</a></li>
-                <li><a href="/industries">Industries</a></li>
               </ul>
               </div>
             </Col>
@@ -38,8 +34,8 @@ const Footer = () => {
             <Col lg={3} md={6} className="footer-col">
                <div>
               <h5>Contact</h5>
-              <p>Email: <a href="mailto:admin@polyfab.in">admin@polyfab.in</a></p>
-              <p>Phone: <a href="tel:+919740990558">(+91) 9740990558</a></p>
+              <p>Email: <a href="mailto: santoshpolyfab@gmail.com"> santoshpolyfab@gmail.com</a></p>
+              <p>Phone: <a href="tel:+8447620822 ">+91 8447620822 </a></p>
               </div>
             </Col>
 
@@ -48,9 +44,8 @@ const Footer = () => {
                <div>
               <h5>Address</h5>
               <p>
-                C-10, Jai Bharath Industrial Estate,<br />
-                Yeshwanthpur,<br />
-                Bangalore - 560022
+               Vill: Navadavan, Faridpur - 243503<br />
+               Bareilly (UP)
               </p>
               </div>
             </Col>
