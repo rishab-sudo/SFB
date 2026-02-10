@@ -12,7 +12,7 @@ const products = [
     id: 1,
     title: "PP Fabric",
     subtitle: "Customized Industrial Fabric",
-    image: require("../assets/Banner/sfb-demo-bg.jpg"),
+    image: require("../assets/Products/PPFabricRoll.jpg"),
     link: "/products/pp-fabric",
     points: [
       "Available in woven, laminated & unlaminated types",
@@ -25,7 +25,7 @@ const products = [
     id: 2,
     title: "PP Bags",
     subtitle: "Strong & Reliable Packaging",
-    image: require("../assets/Banner/sfb-demo-bg.jpg"),
+    image: require("../assets/Products/bag2.jpg"),
     link: "/products/pp-bags",
     points: [
       "Laminated, unlaminated & recycled bags available",
@@ -51,7 +51,7 @@ const products = [
     id: 4,
     title: "Multifilament Yarn",
     subtitle: "High Strength Industrial Yarn",
-    image: require("../assets/Banner/sfb-demo-bg.jpg"),
+    image: require("../assets/Products/multifilamnet-yarn(1).jpeg"),
     link: "/products/multifilament-yarn",
     points: [
       "High strength, smooth finish and consistent quality",

@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+import Preloader from "./components/Preloader";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import { Routes, Route } from "react-router-dom";
@@ -20,11 +22,14 @@ import MultifilamentYarnPage from './pages/Products/MultifilamentYarn';
 import ReprocessGranulesPage from './pages/Products/Granules';
 
 function App() {
+   const [loading, setLoading] = useState(true);
+
   return (
     <div className='App'>
       <Navbar />
       <AppButtons />
-
+       {loading && <Preloader onFinish={() => setLoading(false)} />}
+     
       <Routes>
         {/* Main Pages */}
         <Route path="/" element={<Home />} />

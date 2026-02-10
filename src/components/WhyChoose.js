@@ -11,7 +11,7 @@ const WhyChoose = () => {
           <Col lg={6} md={12} className="p-0">
             <div className="why-choose-image-wrapper">
               <img
-                src={require("../assets/Banner/sfb-demo-bg.jpg")}
+                src={require("../assets/whychoose2.png")}
                 alt="Santosh Polyfab Packaging Manufacturing"
                 className="why-choose-image"
               />

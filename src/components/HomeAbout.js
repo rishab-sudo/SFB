@@ -44,16 +44,20 @@ const HomeAbout = () => {
           </Col>
 
           {/* RIGHT IMAGE */}
-          <Col lg={6} md={12}>
-            <div className="home-about-image-wrapper">
-              <img
-                src={require("../assets/Banner/sfb-demo-bg.jpg")}
-                alt="Packaging Machine"
-                className="home-about-image"
-              />
-              <span className="home-about-play-btn">▶</span>
-            </div>
-          </Col>
+<Col lg={6} md={12}>
+  <div className="home-about-image-wrapper">
+    <video
+      className="home-about-image"
+      src={require("../assets/video/Website Video.mp4")}
+      autoPlay
+      muted
+      loop
+      playsInline
+    />
+    <span className="home-about-play-btn">▶</span>
+  </div>
+</Col>
+
         </Row>
       </Container>
     </section>

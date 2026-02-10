@@ -8,8 +8,8 @@ import "./OurCustomers.css";
 
 const customers = [
   { name: "J.K. Cement Works", img: require("../assets/icons/factory-vector.png"), tag: "Understanding your needs." },
-  { name: "Wonder Cement Limited", img: require("../assets/icons/factory-vector.png"), tag: "Efficient production strategy." },
-  { name: "Heidelbergcement India Limited", img: require("../assets/icons/factory-vector.png"), tag: "Adhering to high standards." },
+  { name: "Wonder Cement Ltd", img: require("../assets/icons/factory-vector.png"), tag: "Efficient production strategy." },
+  { name: "Heidelbergcement India Ltd", img: require("../assets/icons/factory-vector.png"), tag: "Adhering to high standards." },
   { name: "L.H. Sugar Factories Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Reliable supply partner." },
   { name: "Dhampur Sugar Mills Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "On-time logistics & service." },
   { name: "Dhampur Bio Organics Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Quality-driven manufacturing." },
