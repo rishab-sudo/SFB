@@ -1,6 +1,8 @@
 import React from "react";
 import ProductDetail from "../../components/ProductDetail";
 import PageTopBanner from "../../components/PageTopBanner";
+import leftImg from "../../assets/Products/monolayer1.png"
+import rightImg from "../../assets/Products/monolayer2.png";
 
 const MonolyerFilm = () => {
 return (
@@ -13,8 +15,8 @@ return (
   <ProductDetail
     title="Monolayer Films by Santosh Polyfab"
     description="Santosh Polyfab manufactures PE monolayer films and liners used for the safe transit of food products and fine powders, designed to be compatible with different filling and discharge options."
-    leftImage="/products/MonolayerFilms-1.jpg"
-    rightImage="/products/MonolayerFilms-2.jpg"
+    leftImage={leftImg}
+    rightImage={rightImg}
     leftPoints={[
       "Provides oxygen and moisture barrier protection",
       "Chemical resistant and anti-static properties",

@@ -51,7 +51,7 @@ const OurCustomers = () => {
                 <div className="customer-divider"></div>
 
                 {/* BOTTOM TAGLINE */}
-                <p className="customer-tagline">{item.tag}</p>
+                {/* <p className="customer-tagline">{item.tag}</p> */}
               </div>
             </SwiperSlide>
           ))}

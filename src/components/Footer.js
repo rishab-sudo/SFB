@@ -11,7 +11,7 @@ const Footer = () => {
             {/* ABOUT */}
             <Col lg={3} md={6} className="footer-col">
              <div className="footer-logo">
-            <img src={require("../assets/logo22.png")} alt="Logo" />
+            <img src={require("../assets/polyfab-footer-logo2.png")} alt="Logo" />
           </div>
 Santosh Polyfab operates with a modern manufacturing infrastructure and dedicated 
 teams for procurement, production, quality control, and sales, ensuring reliable supply and consistent quality in every product we deliver.

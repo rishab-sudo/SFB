@@ -25,7 +25,7 @@ const products = [
     id: 2,
     title: "PP Bags",
     subtitle: "Strong & Reliable Packaging",
-    image: require("../assets/Products/bag2.jpg"),
+    image: require("../assets/Products/pp-bags-ai.png"),
     link: "/products/pp-bags",
     points: [
       "Laminated, unlaminated & recycled bags available",
@@ -38,7 +38,7 @@ const products = [
     id: 3,
     title: "Monolayer Films",
     subtitle: "Protective PE Liners & Films",
-    image: require("../assets/Banner/sfb-demo-bg.jpg"),
+    image: require("../assets/Products/monolayer1.png"),
     link: "/products/monolayer-films",
     points: [
       "Provides oxygen & moisture barrier protection",
@@ -64,7 +64,7 @@ const products = [
     id: 5,
     title: "Reprocess Granules",
     subtitle: "Sustainable Raw Material",
-    image: require("../assets/Banner/sfb-demo-bg.jpg"),
+    image: require("../assets/Products/granules1.png"),
     link: "/products/reprocess-granules",
     points: [
       "Made from recycled waste to support circular economy",

@@ -1,6 +1,8 @@
 import React from "react";
 import ProductDetail from "../../components/ProductDetail";
 import PageTopBanner from "../../components/PageTopBanner";
+import leftImg from "../../assets/Products/pp-bags-ai11.png";
+import rightImg from "../../assets/Products/pp-bags-ai2.png";
 
 const PPBages = () => {
 return (
@@ -12,8 +14,8 @@ return (
   <ProductDetail
     title="PP Bags by Santosh Polyfab"
     description="Santosh Polyfab manufactures laminated, unlaminated, and recycled PP bags as per customer requirements, designed for reliable and efficient use across multiple industrial and agricultural sectors."
-    leftImage="/products/PPBags-1.jpg"
-    rightImage="/products/PPBags-2.jpg"
+    leftImage={leftImg}
+    rightImage={rightImg}
     leftPoints={[
       "Used in cement, sugar, flour mills, and rice mills industries",
       "Also suitable for solvent plants, cattle feed, irrigation, and food grains",

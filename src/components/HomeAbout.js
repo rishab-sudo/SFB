@@ -14,7 +14,7 @@ const HomeAbout = () => {
               <span className="home-about-tag page-heading">About Us</span>
 
               <h2 className="home-about-heading page-large-heading">
-                We Are Solutions For <br />
+                We Offer Solutions For <br />
                 Your Brand Packaging
               </h2>
 

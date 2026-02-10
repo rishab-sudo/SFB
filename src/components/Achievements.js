@@ -11,43 +11,43 @@ const achvData = [
     id: 1,
     value: "10000 MT",
     label: "Fabric Production Capacity / Year",
-    icon: "/icons/projects.png",
+    img: require("../assets/icons/p1-blue.png"),
   },
   {
     id: 2,
     value: "12 Crore",
     label: "Bags Production Capacity / Year",
-    icon: "/icons/clients.png",
+    img: require("../assets/icons/p2-blue.png"),
   },
   {
     id: 3,
     value: "1200 MT",
     label: "Yarn Production Capacity / Year",
-    icon: "/icons/projects.png",
+     img: require("../assets/icons/p3-blue.png"),
   },
   {
     id: 4,
     value: "220000 Sq.Ft",
     label: "Manufacturing Area",
-    icon: "/icons/awards.png",
+     img: require("../assets/icons/manuf-blue.png"),
   },
   {
     id: 5,
     value: "1.5 MW",
     label: "Captive Solar Plant",
-    icon: "/icons/awards.png",
+      img: require("../assets/icons/solar-blue.png"),
   },
   {
     id: 6,
     value: "9+ Years",
     label: "Industry Experience",
-    icon: "/icons/experience.png",
+    img: require("../assets/icons/indust-blue.png"),
   },
   {
     id: 7,
     value: "150+",
     label: "Varieties of Production",
-    icon: "/icons/projects.png",
+      img: require("../assets/icons/varity-blue.png"),
   },
 ];
 
@@ -79,7 +79,7 @@ const Achievements = () => {
             <SwiperSlide key={item.id}>
               <div className="achv-box">
                 <div className="achv-icon-circle">
-                  <img src={item.icon} alt={item.label} />
+                  <img src={item.img} alt={item.label} />
                 </div>
                 <div className="achv-box-content">
                   <h5>{item.value}</h5>

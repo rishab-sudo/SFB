@@ -1,6 +1,8 @@
 import React from "react";
 import ProductDetail from "../../components/ProductDetail";
 import PageTopBanner from "../../components/PageTopBanner";
+import leftImg from "../../assets/Products/multifilamnet-yarn(1).jpeg"
+import rightImg from "../../assets/Products//multifilamentyarn-2.png";
 
 const MultifilamentYarn = () => {
 return (
@@ -13,8 +15,8 @@ title="Multifilament Yarn."
   <ProductDetail
     title="Multifilament Yarn by Santosh Polyfab"
     description="Multifilament yarn plays a crucial role in packaging, especially in bag-closing applications, where it ensures strong and secure stitching for reliable and stable packaging."
-    leftImage="/products/MultifilamentYarn-1.jpg"
-    rightImage="/products/MultifilamentYarn-2.jpg"
+    leftImage= {leftImg}
+    rightImage= {rightImg}
     leftPoints={[
       "High strength and extra smooth finish under strict supervision",
       "Ensures strong and secure stitches for bag closing",

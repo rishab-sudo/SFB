@@ -34,7 +34,8 @@
 /* BOX */
 .achv-box {
   position: relative;
-  background: #ffffff;
+  background: #286a94;
+    color: #fffffff6 !important;
   padding: 30px 20px;
   padding-left: 70px;   /* 👈 THIS creates space between icon and content */
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
@@ -53,7 +54,9 @@
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
-  background: #286a94; /* blue circle */
+  padding: 7px;
+  background: #fff; 
+  border: 2px solid #0e2a34;/* blue circle */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -61,10 +64,11 @@
 }
 
 .achv-icon-circle img {
-  width: 28px;
-  height: 28px;
+  width: 45px;
+  height: 45px;
+  font-weight: 600;
   object-fit: contain;
-  filter: brightness(0) invert(1); /* make icon white */
+  /* filter: brightness(0) invert(1); */
 }
 
 /* CONTENT */
@@ -74,7 +78,6 @@
 .achv-box-content h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #0e2a34;
   margin-bottom: 4px;
   
 }
@@ -82,7 +85,6 @@
 .achv-box-content p {
   margin: 0;
   font-size: 14px;
-  color: #666;
 }
 
 /* RESPONSIVE */

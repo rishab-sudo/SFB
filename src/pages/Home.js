@@ -14,8 +14,9 @@ const Home = () => {
     <div>
         <HomeBanner/>
         <WhyChoose/>
-        <DotedLine/>
+         <DotedLine/>
         <HomeAbout/>
+        <DotedLine/>
           <Achievements/>
         <HomeProduct/>
           <Process/>

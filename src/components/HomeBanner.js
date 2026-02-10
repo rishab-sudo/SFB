@@ -53,9 +53,9 @@ const HomeBanner = () => {
       }, 20);
     };
 
-    animate(setDesign, 90);
-    animate(setQuality, 95);
-    animate(setSustainable, 95);
+    animate(setDesign, 100);
+    animate(setQuality, 100);
+    animate(setSustainable, 100);
   }, []);
 
   return (

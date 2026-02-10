@@ -1,6 +1,8 @@
 import React from "react";
 import ProductDetail from "../../components/ProductDetail";
 import PageTopBanner from "../../components/PageTopBanner";
+import leftImg from "../../assets/Products/granules2.png";
+import rightImg from "../../assets/Products/granules1.png";
 
 const Granules = () => {
 return (
@@ -14,8 +16,8 @@ return (
   <ProductDetail
     title="Reprocess Granules by Santosh Polyfab"
     description="With a primary focus on achieving a circular economy, Santosh Polyfab converts waste material into reprocess granules that are reused in the manufacturing of PP fabric and PP bags."
-    leftImage="/products/ReprocessGranules-1.jpg"
-    rightImage="/products/ReprocessGranules-2.jpg"
+    leftImage= {leftImg}
+    rightImage= {rightImg}
     leftPoints={[
       "Manufactured by converting waste into reusable granules",
       "Used again in the production of PP fabric and PP bags",
