@@ -5,7 +5,7 @@ import WhyChoose from '../components/WhyChoose'
 import HomeProduct from '../components/HomeProducts'
 import Achievements from '../components/Achievements'
 import Process from '../components/Process'
-import Testimonials from '../components/Testimonials'
+// import Testimonials from '../components/Testimonials'
 import OurCustomers from '../components/OurCustomers'
 import DotedLine from '../components/DotedLine'
 
