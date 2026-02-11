@@ -1,5 +1,6 @@
 .industry-section {
-  padding: 45px 0;
+  padding: 5px 0;
+  padding-bottom: 45px !important;
   background: #f7f9fb;
 
 }
@@ -43,7 +44,7 @@
   position: relative;
   z-index: 2;
   text-align: left;
-     border-radius: 5px;
+  border-radius: 5px;
 }
 
 .industry-card-title {

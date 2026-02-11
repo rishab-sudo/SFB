@@ -66,7 +66,7 @@ title="Industries"
     <Container fluid className="industry-section">
       <Container className="industry-heading-para-div">
 
-  <h1 className="page-large-heading">Our Esteemed Customers</h1>
+  <h1 className="page-heading">Our Esteemed Customers</h1>
   <p className="page-description">
     Over the years, Santosh Polyfab has earned the trust of leading organizations
     by delivering high-quality packaging materials and dependable service. We

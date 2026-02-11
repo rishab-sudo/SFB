@@ -3,14 +3,15 @@
 }
 
 .page-heading{
-font-size: 35px;
-  color: transparent !important;
-  -webkit-text-stroke: 1px #286a94 !important;
+font-size: 36px;
+color: #286a94 !important;
+  /* color: transparent !important;
+  -webkit-text-stroke: 1px #286a94 !important; */
   display: block !important;
-  font-weight: 500;
+  font-weight: 700;
 }
 .page-large-heading{
-font-size: 24px;
+font-size: 22px;
 margin-bottom: 15px;
 font-weight: 600;
 text-transform: capitalize;

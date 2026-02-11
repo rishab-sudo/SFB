@@ -141,9 +141,11 @@ const HomeProducts = () => {
                   <div className="home-products-card-content">
                     <h4 className="home-products-h4">{item.title}</h4>
                     <p className="home-products-p">{item.subtitle}</p>
-                    <a href={item.link} className="home-products-readmore">
+                 <div className="w-100 home-products-readmore">  
+                  <a href={item.link} className="">
                       Read More →
                     </a>
+                    </div> 
                   </div>
                 </div>
               </SwiperSlide>

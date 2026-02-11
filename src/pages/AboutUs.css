@@ -21,9 +21,6 @@
 }
 
 .about-subheading {
-  font-size: 22px;
-  font-weight: 600;
-  color: #286a94;
   margin-bottom: 20px;
 }
 
@@ -42,7 +39,83 @@
   width: 100%;
   border-radius: 6px;
 }
+/*---------- mission-vision----------- */
+.mission-vision-section {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  background-image: url("../assets/Banner/factory1.png"); /* change image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
+}
+
+.mission-vision-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 80px 0px;
+}
+
+.mission-vision-wrapper {
+  position: relative;
+  min-height: 350px;
+  max-height: 500px;
+}
+
+/* Common styles */
+.mission-box,
+.vision-box {
+  width: 45%;
+  color: #fff;
+}
+
+.mission-box h4,
+.vision-box h4 {
+  font-size: 32px;
+  margin-bottom: 20px; /* little more space for underline */
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  display: inline-block; /* so underline fits text width */
+}
+
+/* Underline */
+.mission-box h4::after,
+.vision-box h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 65%;         
+  height: 2px;         
+  background-color: #fff; 
+ 
+}
+
+.mission-box p,
+.vision-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #eaeaea;
+  margin-top: 1rem;
+}
+
+/* Positioning */
+.mission-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.vision-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+}
 /* ===== SECTION 2 ===== */
 /* .our-quality {
   margin-top: 3.5%;
@@ -102,12 +175,12 @@
 }
 
 .our-quality-icon {
-  font-size: 24px;
+  font-size: 27px;
   color: #286a94;
 }
 
 .our-quality-box span {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: #0e2a34;
 } 
@@ -137,14 +210,12 @@
 .directors-heading {
   font-size: 36px;
   font-weight: 700;
-  color: #0e2a34;
   margin-bottom: 10px;
 }
 
 .directors-subheading {
   font-size: 20px;
   font-weight: 600;
-  color: #286a94;
   margin-bottom: 16px;
 }
 
@@ -229,4 +300,10 @@ margin: auto !important;
   margin: auto !important;
 
 }
+  .mission-box,
+  .vision-box {
+    position: static;
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }

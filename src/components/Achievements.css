@@ -73,18 +73,18 @@
 
 /* CONTENT */
 .achv-box-content{
- font-weight: 600;
+ font-weight: 600 !important;
 }
-.achv-box-content h3 {
-  font-size: 28px;
-  font-weight: 700;
+.achv-box-content h5 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
   margin-bottom: 4px;
   
 }
 
 .achv-box-content p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* RESPONSIVE */

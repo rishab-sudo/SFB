@@ -49,13 +49,12 @@
   border-color: #286a94;
 }
 
-
 /* CARD */
 .home-products-card {
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  height: 100%;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.08) !important;
+height: 100%;
 }
 
 /* IMAGE AREA */
@@ -116,6 +115,7 @@
 
 /* CONTENT */
 .home-products-card-content {
+  background-color: #286b9400;
   padding: 16px;
 }
 
@@ -132,10 +132,26 @@
 }
 
 .home-products-readmore {
-  font-size: 14px;
-  font-weight: 600;
-  color: #0e2a34;
+  display: inline-block;
+  margin-top: 12px;
+  padding-top: 12px;
   text-decoration: none;
+  font-weight: 600;
+  color: #000; /* or your theme color */
+  position: relative;
+}
+.home-products-readmore a{
+  text-decoration: none;
+  color: #286a94;
+}
+/* Dotted line above Read More */
+.home-products-readmore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  border-top: 1.5px dotted #999; /* change color if needed */
 }
 
 /* RESPONSIVE */
