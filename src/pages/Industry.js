@@ -8,19 +8,19 @@ const data = [
     id: 1,
     title: "Cement Industry",
     desc: "A trusted partner for consistent quality packaging and material supply.",
-    img: require("../assets/Banner/sfb-demo-bg.jpg"),
+    img: require("../assets/industy/industry-cement3.png"),
   },
   {
     id: 2,
     title: "Sugar Industry",
     desc: "Serving with reliable packaging solutions and timely deliveries.",
-    img: require("../assets/Banner/sfb-demo-bg.jpg"),
+    img: require("../assets/industy/industry-sugar2.png"),
   },
   {
     id: 3,
     title: "Flour Mills",
     desc: "Supporting operations with dependable and high-performance materials.",
-    img: require("../assets/Banner/sfb-demo-bg.jpg"),
+    img: require("../assets/industy/industry-flour2.png"),
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const data = [
     id: 5,
     title: "Rice Mills",
     desc: "Delivering consistent quality and reliable supply for industrial needs.",
-    img: require("../assets/Banner/sfb-demo-bg.jpg"),
+    img: require("../assets/industy/industry-rice2.png"),
   },
   {
     id: 6,
@@ -44,7 +44,7 @@ const data = [
     id: 7,
     title: "Irrigation",
     desc: "Trusted for durable packaging materials and dependable service support.",
-    img: require("../assets/Banner/sfb-demo-bg.jpg"),
+    img: require("../assets/industy/industry-agriculture2.png"),
   },
   {
     id: 8,
