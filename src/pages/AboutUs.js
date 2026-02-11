@@ -129,79 +129,66 @@ Our substantial increase in production capacity and immense success is based on 
 </section>
 
 
+{/* ===== SECTION : DIRECTORS (NEW) ===== */}
+<section className="director">
+  <div className="Directors-heading-div">
+    <h3 className="page-heading">Our Team Directors</h3>
+  </div>
+  <Container>
+    <div className="director-cards">
 
-            {/* ===== SECTION 3 : DIRECTORS ===== */}
-      <section className="directors">
-        <Container className="directors-container">
-          {/* ROW 1: TEXT LEFT, IMAGE RIGHT */}
-          <Row className="align-items-between directors-row">
-            <Col lg={6} md={12}>
-              <div className="directors-content">
-                <h2 className="directors-heading page-heading">Director</h2>
-                <h4 className="directors-subheading page-large-heading">Mr. Manoj Kumar Agarwal</h4>
-                <p className="directors-text">
-He is the founder of the Company, successfully guiding the operations of the company. His vast experience of 30 years 
-in manufacturing sector has helped in company’s growth.
-                </p>
-              </div>
-            </Col>
-            <Col lg={6} md={12}>
-              <div className="directors-image-wrapper">
-                <img
-                    src={require("../assets/Banner/sfb-demo-bg.jpg")}
-                  alt="Director 1"
-                  className="directors-image"
-                />
-              </div>
-            </Col>
-          </Row>
+      {/* CARD 1 */}
+      <div className="director-card">
+        <div className="director-image-wrap">
+          <img
+            src={require("../assets/icons/Manoj Kumar Agarwal (2).JPG")}
+            alt="Mr. Manoj Kumar Agarwal"
+            className="director-image"
+          />
+        </div>
+        <h4 className="director-name">Mr. Manoj Kumar Agarwal</h4>
+        <p className="director-desc">
+          He is the founder of the Company, successfully guiding the operations of the company.
+          His vast experience of 30 years in the manufacturing sector has helped in the company’s growth.
+        </p>
+      </div>
 
-          {/* ROW 2: IMAGE LEFT, TEXT RIGHT */}
-          <Row className="align-items-between directors-row">
-            <Col lg={6} md={12}>
-              <div className="directors-image-wrapper">
-                <img
-                     src={require("../assets/Banner/sfb-demo-bg.jpg")}
-                  alt="Director 2"
-                  className="directors-image directors-image2"
-                />
-              </div>
-            </Col>
-            <Col lg={6} md={12}>
-              <div className="directors-content">
-                <h2 className="directors-heading page-heading">Co-Director</h2>
-                <h4 className="directors-subheading page-large-heading">Mr. Bharat Agarwal</h4>
-                <p className="directors-text">
-Mr. Bharat frontlines strategy and marketing discipline with the vision to make the company a global leader. His dedication has constantly 
-led to the growth and development of the company.
-                </p>
-              </div>
-            </Col>
-          </Row>
+      {/* CARD 2 */}
+      <div className="director-card">
+        <div className="director-image-wrap">
+          <img
+            src={require("../assets/icons/Bharat Agarwal (2).JPG")}
+            alt="Mr. Bharat Agarwal"
+            className="director-image"
+          />
+        </div>
+        <h4 className="director-name">Mr. Bharat Agarwal</h4>
+        <p className="director-desc">
+          Mr. Bharat frontlines strategy and marketing discipline with the vision to make the company a global leader.
+          His dedication has constantly led to the growth and development of the company.
+        </p>
+      </div>
 
-          {/* ROW 3: TEXT LEFT, IMAGE RIGHT */}
-                  <Row className="align-items-between directors-row">
-            <Col lg={6} md={12}>
-              <div className="directors-content">
-                <h2 className="directors-heading page-heading">Managing Director</h2>
-                <h4 className="directors-subheading page-large-heading">Mr. Rajjat Agarwal</h4>
-                <p className="directors-text">
-Mr. Rajat with his innovative new ideas has helped the company to develop new products and contribute to its growth. His passion for the environment has always encouraged him to use Eco-Friendly substitutes and additives to reduce
- the consumption of plastics in day-to-day life.</p>
-              </div>
-            </Col>
-            <Col lg={6} md={12}>
-              <div className="directors-image-wrapper">
-                <img
-                  src={require("../assets/Banner/sfb-demo-bg.jpg")}
-                  alt="Director 3"
-                  className="directors-image"
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      {/* CARD 3 */}
+      <div className="director-card">
+        <div className="director-image-wrap">
+          <img
+            src={require("../assets/icons/Rajjat Agarwal (1).JPG")}
+            alt="Mr. Rajat Agarwal"
+            className="director-image"
+          />
+        </div>
+        <h4 className="director-name">Mr. Rajat Agarwal</h4>
+        <p className="director-desc">
+          Mr. Rajat, with his innovative ideas, has helped the company develop new products and grow.
+          His passion for the environment encourages eco-friendly solutions in daily operations.
+        </p>
+      </div>
+
+    </div>
+  </Container>
+</section>
+
       {/* ===== SECTION 2 ===== */}
       {/* <section className="our-quality">
         <Container className="our-quality-container">

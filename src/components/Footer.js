@@ -58,7 +58,7 @@ teams for procurement, production, quality control, and sales, ensuring reliable
         <Container className="footer-bottom-inner">
           <span>© Polyfab 2026 | All Rights Reserved.</span>
           <span>
-            Designed & Developed by <strong>21Maneuvers Pvt. Ltd.</strong>
+            Designed & Developed by <strong>21Maneuvers</strong>
           </span>
         </Container>
       </div>

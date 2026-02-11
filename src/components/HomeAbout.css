@@ -11,13 +11,13 @@
 }
 
 .home-about-tag {
-  color: transparent;
+  /* color: transparent;
   -webkit-text-stroke: 1px #286a94;
-  display: block;
+  display: block; */
 }
 
 .home-about-heading {
-  color: #0e2a34;
+ 
 }
 
 .home-about-description {

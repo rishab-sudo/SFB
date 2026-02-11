@@ -6,53 +6,54 @@ import PageTopBanner from "../components/PageTopBanner";
 const data = [
   {
     id: 1,
-    title: "J.K. Cement Works",
+    title: "Cement Industry",
     desc: "A trusted partner for consistent quality packaging and material supply.",
     img: require("../assets/Banner/sfb-demo-bg.jpg"),
   },
   {
     id: 2,
-    title: "Wonder Cement Limited",
+    title: "Sugar Industry",
     desc: "Serving with reliable packaging solutions and timely deliveries.",
     img: require("../assets/Banner/sfb-demo-bg.jpg"),
   },
   {
     id: 3,
-    title: "Heidelberg India Limited",
+    title: "Flour Mills",
     desc: "Supporting operations with dependable and high-performance materials.",
     img: require("../assets/Banner/sfb-demo-bg.jpg"),
   },
   {
     id: 4,
-    title: "L.H. Sugar Factories Ltd.",
+    title: "Solvent Plant",
     desc: "Providing quality packaging materials for smooth industrial operations.",
-    img: require("../assets/Banner/sfb-demo-bg.jpg"),
+    img: require("../assets/industy/industry-sugar2.png"),
   },
   {
     id: 5,
-    title: "Dhampur Sugar Mills Ltd.",
+    title: "Rice Mills",
     desc: "Delivering consistent quality and reliable supply for industrial needs.",
     img: require("../assets/Banner/sfb-demo-bg.jpg"),
   },
   {
     id: 6,
-    title: "Dhampur Bio Organics Ltd.",
+    title: "Cattle Feed",
     desc: "Partnering with a focus on quality, efficiency, and long-term reliability.",
-    img: require("../assets/Banner/sfb-demo-bg.jpg"),
+    img: require("../assets/industy/industry-cattle2.png"),
   },
   {
     id: 7,
-    title: "Dwarikesh Sugar Industries Ltd.",
+    title: "Irrigation",
     desc: "Trusted for durable packaging materials and dependable service support.",
     img: require("../assets/Banner/sfb-demo-bg.jpg"),
   },
   {
     id: 8,
-    title: "Shubham Goldie Masale Pvt.Ltd.",
+    title: "Food Grain & Other Food Industries",
     desc: "Supplying packaging materials with consistent quality and performance.",
-    img: require("../assets/Banner/sfb-demo-bg.jpg"),
+    img: require("../assets/industy/industry-food2.png"),
   },
 ];
+
 
 
 const Industry = () => {
