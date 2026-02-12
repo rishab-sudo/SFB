@@ -6,7 +6,7 @@ const WhyChoose = () => {
   return (
     <section className="why-choose">
       <Container fluid>
-        <Row className="align-items-center">
+        <Row className="align-items-center why-row">
           {/* LEFT IMAGE */}
           <Col lg={6} md={12} className="p-0">
             <div className="why-choose-image-wrapper">
@@ -36,10 +36,10 @@ const WhyChoose = () => {
               </h2>
 
               <p className="why-choose-description page-description">
-                Santosh Polyfab is a trusted manufacturer and supplier of PP fabric, PP bags,
-                monolayer films, multifilament yarn, and reprocess granules. With modern
-                infrastructure and a skilled team, we deliver consistent quality, reliable supply,
-                and cost-effective material solutions for multiple industries.
+Santosh Polyfab is a trusted manufacturer and supplier of PP fabric, PP bags,
+ monolayer films, multifilament yarn, and reprocessed granules. With modern infrastructure
+  and a skilled team, we deliver consistent quality, reliable supply, and cost-effective material 
+  solutions across multiple industries.
               </p>
 
               <div className="why-choose-features">

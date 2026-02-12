@@ -186,15 +186,43 @@
 
 @media (max-width: 768px) {
   .home-banner {
-    padding-bottom: 140px;
+    height: 350px !important;
+    min-height: 350px !important;   /* 👈 THIS IS THE KEY */
+    padding: 0 !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .home-banner-overlay {
+    height: 350px !important;
+    min-height: 350px !important;   /* 👈 ALSO IMPORTANT */
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .home-banner-content {
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  .hb-bottom-left {
+    display: none !important;
   }
 
   .home-banner-content h1 {
     font-size: 32px;
   }
-
-  .hb-bottom-left {
+    .hb-bottom-left {
     flex-direction: column;
     gap: 20px;
   }
+.hb-bottom-wrapper {
+display: none !important;
 }
+}
+
+
+
+

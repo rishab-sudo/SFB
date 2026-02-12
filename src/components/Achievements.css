@@ -89,11 +89,16 @@
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .achv-fluid {
+  margin-top: 2.5% !important;
+  padding: 25px 0px;
+}
   .achv-heading {
     font-size: 30px;
   }
 
   .achv-box {
+    width: 98% !important;
     padding-left: 70px;
     margin: auto !important;
   }

@@ -97,26 +97,31 @@
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .home-about {
-    padding: 80px 0;
+    margin-top: 2.5%;
+    padding: 25px 0;
   }
-
-  .home-about-content {
+.home-about-content {
     max-width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
-
   .home-about-points {
     flex-direction: column;
     gap: 10px;
   }
-
   .home-about-play-btn {
     left: 50%;
     transform: translateX(-50%);
+    display: none !important;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px)
+{
+    .home-about {
+    padding: 25px 0 !important;
+    /* background-color: #333 !important; */
+  }
+
   .home-about-heading {
     font-size: 32px;
   }
@@ -124,4 +129,7 @@
   .home-about-tag {
     font-size: 34px;
   }
+  .home-about-play-btn {
+display: none !important;
+}
 }

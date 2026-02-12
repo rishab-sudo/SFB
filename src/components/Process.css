@@ -147,6 +147,11 @@
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .process {
+  margin-top: 3.5%;
+  padding: 25px 0;
+  background: #ffffff;
+}
   .process-container {
     flex-direction: column;
     gap: 40px;

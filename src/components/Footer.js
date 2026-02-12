@@ -20,7 +20,7 @@ teams for procurement, production, quality control, and sales, ensuring reliable
             {/* QUICK LINKS */}
             <Col lg={3} md={6} className="footer-col">
             <div>
-              <h5>Quick Links</h5>
+              <h5 className="col-heading">Quick Links</h5>
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About Us</a></li>
@@ -33,7 +33,7 @@ teams for procurement, production, quality control, and sales, ensuring reliable
             {/* CONTACT */}
             <Col lg={3} md={6} className="footer-col">
                <div>
-              <h5>Contact</h5>
+              <h5 className="col-heading">Contact</h5>
               <p>Email: <a href="mailto: santoshpolyfab@gmail.com"> santoshpolyfab@gmail.com</a></p>
               <p>Phone: <a href="tel:+8447620822 ">+91 8447620822 </a></p>
               </div>
@@ -42,7 +42,7 @@ teams for procurement, production, quality control, and sales, ensuring reliable
             {/* ADDRESS */}
             <Col lg={3} md={6} className="footer-col">
                <div>
-              <h5>Address</h5>
+              <h5 className="col-heading">Address</h5>
               <p>
                Vill: Navadavan, Faridpur - 243503<br />
                Bareilly (UP)

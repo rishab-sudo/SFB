@@ -19,7 +19,7 @@ const HomeAbout = () => {
               </h2>
 
               <p className="home-about-description page-description">
-             Santosh Polyfab Pvt Ltd located in Bareilly (UP) started its production of PP woven fabric
+             Santosh Polyfab Pvt.Ltd. located in Bareilly (UP) started its production of PP woven fabric
               and bags in 2017, spread across 220000 sq ft with state of art machinery and infrastructure, since then we have been adhering to the market trends & demand for innovative products.
               </p>
 
