@@ -98,7 +98,7 @@ color: #555;
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .product-detail {
-    padding: 70px 0;
+    padding: 25px 0;
   }
 
   .product-detail-heading {
