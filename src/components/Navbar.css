@@ -106,7 +106,7 @@
 .nav-dropdown-title {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 1px;
   cursor: pointer;
   font-size: 20px;          /* you can increase this */
   color: #222;
@@ -117,13 +117,13 @@
 }
 
 .dropdown-arrow {
-  font-size: 24px;          /* slightly smaller than text or equal */
+  font-size: 26px;          /* slightly smaller than text or equal */
   line-height: 1;
   display: flex;
   align-items: center;
   transition: transform 0.3s ease;
+  top: 0px;                 /* tiny nudge down (tweak 0–2px if needed) */
   position: relative;
-  top: 1px;                 /* tiny nudge down (tweak 0–2px if needed) */
 }
 
 
@@ -167,6 +167,7 @@
 }
 
 .nav-dropdown-menu li {
+ 
   padding: 10px 20px;
   transition: background 0.2s ease;
 }
@@ -178,7 +179,7 @@
 
 .nav-dropdown-menu li a {
   color: #222;
-  font-size: 16px;
+font-size: 16px;
   text-decoration: none;
 }
 
