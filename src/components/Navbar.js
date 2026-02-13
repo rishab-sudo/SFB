@@ -25,21 +25,24 @@ const Navbar = () => {
             <li><NavLink to="/about">About</NavLink></li>
 
             {/* DROPDOWN */}
-            <li
-              className="nav-dropdown"
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <span className="nav-dropdown-title">Products & Solutions</span>
+<li
+  className={`nav-dropdown ${dropdownOpen ? "open" : ""}`}
+  onMouseEnter={() => setDropdownOpen(true)}
+  onMouseLeave={() => setDropdownOpen(false)}
+>
+  <span className="nav-dropdown-title">
+    Products & Solutions <span className="dropdown-arrow">▾</span>
+  </span>
 
-              <ul className={`nav-dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-                <li><NavLink to="/products/pp-fabric">PP Fabric</NavLink></li>
-                <li><NavLink to="/products/pp-bags">PP Bags</NavLink></li>
-                <li><NavLink to="/products/monolayer-films">Monolayer Films</NavLink></li>
-                <li><NavLink to="/products/multifilament-yarn">Multifilament Yarn</NavLink></li>
-                <li><NavLink to="/products/reprocess-granules">Reprocess Granules</NavLink></li>
-              </ul>
-            </li>
+  <ul className={`nav-dropdown-menu ${dropdownOpen ? "show" : ""}`}>
+    <li><NavLink to="/products/pp-fabric">PP Fabric</NavLink></li>
+    <li><NavLink to="/products/pp-bags">PP Bags</NavLink></li>
+    <li><NavLink to="/products/monolayer-films">Monolayer Films</NavLink></li>
+    <li><NavLink to="/products/multifilament-yarn">Multifilament Yarn</NavLink></li>
+    <li><NavLink to="/products/reprocess-granules">Reprocess Granules</NavLink></li>
+  </ul>
+</li>
+
 
             <li><NavLink to="/industry">Industries</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>

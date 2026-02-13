@@ -104,11 +104,33 @@
 }
 
 .nav-dropdown-title {
-  font-size: 18.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 20px;          /* you can increase this */
   color: #222;
   font-weight: 500;
+  line-height: 1;           /* IMPORTANT */
+  padding: 0;
+  margin: 0;
 }
 
+.dropdown-arrow {
+  font-size: 24px;          /* slightly smaller than text or equal */
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  top: 1px;                 /* tiny nudge down (tweak 0–2px if needed) */
+}
+
+
+/* Rotate arrow when dropdown is open */
+.nav-dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
 .nav-dropdown-menu {
   position: absolute;
   top: 120%;
