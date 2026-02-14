@@ -59,6 +59,9 @@
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .page-top-banner {
+height: 275px;
+}
   .page-top-banner-title {
     font-size: 28px;
   }
