@@ -18,7 +18,7 @@ teams for procurement, production, quality control, and sales, ensuring reliable
             </Col>
 
             {/* QUICK LINKS */}
-            <Col lg={3} md={6} className="footer-col">
+            <Col lg={3} md={6} className="footer-col margin-top">
             <div>
               <h5 className="col-heading">Quick Links</h5>
               <ul>
@@ -31,7 +31,7 @@ teams for procurement, production, quality control, and sales, ensuring reliable
             </Col>
 
             {/* CONTACT */}
-            <Col lg={3} md={6} className="footer-col">
+            <Col lg={3} md={6} className="footer-col margin-top">
                <div>
               <h5 className="col-heading">Contact</h5>
               <p>Email: <a href="mailto: santoshpolyfab@gmail.com"> santoshpolyfab@gmail.com</a></p>
@@ -40,7 +40,7 @@ teams for procurement, production, quality control, and sales, ensuring reliable
             </Col>
 
             {/* ADDRESS */}
-            <Col lg={3} md={6} className="footer-col">
+            <Col lg={3} md={6} className="footer-col margin-top">
                <div>
               <h5 className="col-heading">Address</h5>
               <p>

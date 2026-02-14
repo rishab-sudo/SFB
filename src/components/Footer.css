@@ -69,7 +69,9 @@ align-items: center;
   justify-content: space-between;
   align-items: center;
 }
-
+.margin-top{
+  margin-top: 56px;
+}
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .footer-col {
@@ -94,7 +96,9 @@ align-items: center;
     text-align: left !important;
     font-size: 18px;
   }
-
+.margin-top{
+  margin-top: 2px;
+}
   .footer-bottom-inner {
     justify-content: flex-start;
     align-items: flex-start;
@@ -102,5 +106,6 @@ align-items: center;
     gap: 8px;
     text-align: left;
   }
+
 }
 
