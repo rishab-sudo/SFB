@@ -60,7 +60,7 @@ const Products = () => {
               <div className="products-card">
                 {/* IMAGE */}
                 <div className="products-card-image">
-                  <img src={item.img} alt={item.title} />
+                  <img   loading="lazy" src={item.img} alt={item.title} />
                 </div>
 
                 {/* CONTENT */}

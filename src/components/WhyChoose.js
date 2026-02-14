@@ -14,6 +14,7 @@ const WhyChoose = () => {
                 src={require("../assets/whychoose2.png")}
                 alt="Santosh Polyfab Packaging Manufacturing"
                 className="why-choose-image"
+                  loading="lazy"
               />
 
               <div className="why-choose-image-box">
@@ -76,7 +77,7 @@ Santosh Polyfab is a trusted manufacturer and supplier of PP fabric, PP bags,
       <Container className="whyus-box-container">
         <div className="whyus-box-row">
           <div className="whyus-box-item">
-            <img src= {require("../assets/icons/Quality.png")} alt="Premium Quality" className="whyus-box-icon" />
+            <img   loading="lazy" src= {require("../assets/icons/Quality.png")} alt="Premium Quality" className="whyus-box-icon" />
             <div className="whyus-box-text">
               <h5>Premium Quality Materials</h5>
               <p>
@@ -98,7 +99,7 @@ Santosh Polyfab is a trusted manufacturer and supplier of PP fabric, PP bags,
           </div>
 
           <div className="whyus-box-item">
-            <img src= {require("../assets/icons/eco friendly.png")} alt="Sustainable Manufacturing" className="whyus-box-icon" />
+            <img   loading="lazy" src= {require("../assets/icons/eco friendly.png")} alt="Sustainable Manufacturing" className="whyus-box-icon" />
             <div className="whyus-box-text">
               <h5>Sustainable Manufacturing</h5>
               <p>
@@ -109,7 +110,7 @@ Santosh Polyfab is a trusted manufacturer and supplier of PP fabric, PP bags,
           </div>
 
           <div className="whyus-box-item">
-            <img src= {require("../assets/icons/support.png")} alt="Reliable Supply Support" className="whyus-box-icon" />
+            <img   loading="lazy" src= {require("../assets/icons/support.png")} alt="Reliable Supply Support" className="whyus-box-icon" />
             <div className="whyus-box-text">
               <h5>Reliable Supply & Support</h5>
               <p>

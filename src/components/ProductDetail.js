@@ -32,7 +32,7 @@ const ProductDetail = ({
           <Col lg={6} md={12}>
             {/* IMAGE CARD */}
             <div className="product-detail-image-card">
-              <img src={leftImage} alt="Left Product" />
+              <img   loading="lazy" src={leftImage} alt="Left Product" />
             </div>
 
             {/* POINTS CARD */}
@@ -52,7 +52,7 @@ const ProductDetail = ({
           <Col lg={6} md={12}>
             {/* IMAGE CARD */}
             <div className="product-detail-image-card">
-              <img src={rightImage} alt="Right Product" />
+              <img   loading="lazy" src={rightImage} alt="Right Product" />
             </div>
 
             {/* POINTS CARD */}

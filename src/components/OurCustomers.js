@@ -12,7 +12,7 @@ const customers = [
   { name: "Heidelbergcement India Ltd", img: require("../assets/icons/factory-vector.png"), tag: "Adhering to high standards." },
   { name: "L.H. Sugar Factories Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Reliable supply partner." },
   { name: "Dhampur Sugar Mills Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "On-time logistics & service." },
-  { name: "Dhampur Bio Organics Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Quality-driven manufacturing." },
+  { name: "Dhampur Bio Organics Ltd.", img: require("../assets/icons/dbo22.png"), tag: "Quality-driven manufacturing." },
   { name: "Dwarikesh Sugar Industries Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Trusted industry collaboration." },
   { name: "Shubham Goldie Masale Pvt. Ltd.", img: require("../assets/icons/factory-vector.png"), tag: "Consistent packaging solutions." },
 ];

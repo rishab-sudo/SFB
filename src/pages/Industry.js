@@ -83,7 +83,7 @@ title="Industries"
               <div className="industry-card">
                 {/* IMAGE */}
                 <div className="industry-card-image">
-                  <img src={item.img} alt={item.title} />
+                  <img   loading="lazy" src={item.img} alt={item.title} />
                 </div>
 
                 {/* OVERLAPPING CONTENT BOX */}

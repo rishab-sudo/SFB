@@ -53,6 +53,7 @@ const HomeAbout = () => {
       muted
       loop
       playsInline
+        loading="lazy"
     />
     <span className="home-about-play-btn">▶</span>
   </div>

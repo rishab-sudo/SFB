@@ -14,7 +14,6 @@ import Home from "./pages/Home";
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
 import Industry from './pages/Industry';
-
 // Products pages
 import PPFabricPage from './pages/Products/PPFabricPage';
 import PPBagsPage from './pages/Products/PPBags';
@@ -33,11 +32,11 @@ function App() {
      <ScrollToTop /> 
       <Routes>
         {/* Main Pages */}
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/industry" element={<Industry />} />
-        <Route path="/contact" element={<ContactUs />} />
+         <Route path="/" element={<Home />} />
+         <Route path="/home" element={<Home />} />
+         <Route path="/about" element={<AboutUs />} />
+         <Route path="/industry" element={<Industry />} />
+         <Route path="/contact" element={<ContactUs />} />
 
         {/* Products Nested Routes */}
         <Route path="/products">

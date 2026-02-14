@@ -140,7 +140,7 @@ Our substantial increase in production capacity and immense success is based on 
       {/* CARD 1 */}
       <div className="director-card">
         <div className="director-image-wrap">
-          <img
+          <img   loading="lazy"
             src={require("../assets/icons/Manoj Kumar Agarwal (2).JPG")}
             alt="Mr. Manoj Kumar Agarwal"
             className="director-image"
@@ -156,7 +156,7 @@ Our substantial increase in production capacity and immense success is based on 
       {/* CARD 2 */}
       <div className="director-card">
         <div className="director-image-wrap">
-          <img
+          <img   loading="lazy"
             src={require("../assets/icons/Bharat Agarwal (2).JPG")}
             alt="Mr. Bharat Agarwal"
             className="director-image"
@@ -172,7 +172,7 @@ Our substantial increase in production capacity and immense success is based on 
       {/* CARD 3 */}
       <div className="director-card">
         <div className="director-image-wrap">
-          <img
+          <img   loading="lazy"
             src={require("../assets/icons/Rajjat Agarwal (1).JPG")}
             alt="Mr. Rajat Agarwal"
             className="director-image"
@@ -196,7 +196,7 @@ Our substantial increase in production capacity and immense success is based on 
          
             <Col lg={6} md={12}>
               <div className="our-quality-image-wrapper">
-                <img
+                <img   loading="lazy"
                      src={require("../assets/Banner/sfb-demo-bg.jpg")}
                   alt="Our Quality"
                   className="our-quality-image"

@@ -125,7 +125,7 @@ const HomeProducts = () => {
                 <div className="home-products-card">
                   {/* IMAGE */}
                   <div className="home-products-card-image">
-                    <img src={item.image} alt={item.title} />
+                    <img   loading="lazy" src={item.image} alt={item.title} />
 
                     {/* HOVER OVERLAY */}
                     <div className="home-products-card-overlay">
