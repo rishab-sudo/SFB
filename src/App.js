@@ -4,6 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import { Routes, Route } from "react-router-dom";
 import './App.css';
+import ScrollToTop from "./components/ScrollToTop";
 
 import Navbar from './components/Navbar';
 import AppButtons from './components/AppButtons';
@@ -29,7 +30,7 @@ function App() {
       <Navbar />
       <AppButtons />
        {loading && <Preloader onFinish={() => setLoading(false)} />}
-     
+     <ScrollToTop /> 
       <Routes>
         {/* Main Pages */}
         <Route path="/" element={<Home />} />
