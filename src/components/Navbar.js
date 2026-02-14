@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import GetQuotePopup from "../components/GetQuotePopup";
 import { Container } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -15,9 +15,11 @@ const Navbar = () => {
       <div className="navbar-wrapper">
         <Container className="navbar-inner">
           {/* LEFT LOGO */}
-          <div className="nav-logo">
-            <img src={require("../assets/logo22.png")} alt="Logo" />
-          </div>
+      <div className="nav-logo">
+  <Link to="/">
+    <img src={require("../assets/logo22.png")} alt="Logo" />
+  </Link>
+</div>
 
           {/* DESKTOP MENU */}
           <ul className="nav-links">
