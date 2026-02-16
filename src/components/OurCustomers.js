@@ -41,9 +41,9 @@ const OurCustomers = () => {
               <div className="customer-card">
                 {/* TOP PART */}
                 <div className="customer-card-top">
-                  <div className="customer-logo">
+                  {/* <div className="customer-logo">
                     <img src={item.img} alt={item.name} />
-                  </div>
+                  </div> */}
                   <h6 className="customer-name">{item.name}</h6>
                 </div>
 
