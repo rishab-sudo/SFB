@@ -12,7 +12,7 @@
 /* CARD */
 .customer-card {
   margin-top: 22px;
-background-color: #286a94;
+  background-color: #286a94;
   text-align: left;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   border-radius: 4px;
@@ -64,9 +64,9 @@ background-color: #286a94;
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .customer {
-    padding: 60px 0;
+     padding: 60px 0 ;
   }
-
+ 
   .customer-heading {
     font-size: 28px;
   }
