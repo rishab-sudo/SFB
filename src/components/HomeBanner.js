@@ -5,26 +5,26 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./HomeBanner.css";
 
 const slides = [
-  {
-    image: require("../assets/Banner/factory1.png"),
-    title: "Reliable Packaging Materials, Built to Perform",
-    desc: "At Santosh Polyfab, we manufacture PP fabric, PP bags, monolayer films, multifilament yarn, and reprocess granules with uncompromising quality.",
-  },
-  {
-    image: require("../assets/Banner/factory2-blue.png"),
-    title: "High Quality PP Bags for Every Industry",
-    desc: "Our PP bags are designed for strength, durability and long-lasting performance across multiple industries.",
-  },
-  {
-    image: require("../assets/Banner/factory3-blue.png"),
-    title: "Sustainable & Strong Manufacturing",
-    desc: "We focus on eco-friendly processes while maintaining premium quality and consistency in every product.",
-  },
-  {
-    image: require("../assets/Banner/factory-solor.png"),
-    title: "Sustainable & Strong Manufacturing",
-    desc: "We focus on eco-friendly processes while maintaining premium quality and consistency in every product.",
-  },
+{
+  image: require("../assets/Banner/factory1.png"),
+  title: "Reliable Packaging Materials, Built to Perform",
+  desc: "At Santosh Polyfab, we manufacture PP fabric, PP bags, monolayer films, multifilament yarn, and reprocess granules with uncompromising quality.",
+},
+{
+  image: require("../assets/Banner/factory2-blue.png"),
+  title: "High Quality PP Bags for Every Industry",
+  desc: "Our PP bags are designed for strength, durability and long-lasting performance across multiple industries.",
+},
+{
+  image: require("../assets/Banner/factory3-blue.png"),
+  title: "Sustainable & Strong Manufacturing",
+  desc: "We focus on eco-friendly processes while maintaining premium quality and consistency in every product.",
+},
+{
+  image: require("../assets/Banner/factory-solor.png"),
+  title: "Powered by Clean & Efficient Energy",
+  desc: "Our solar-powered infrastructure supports sustainable manufacturing while reducing environmental impact and ensuring efficient production.",
+},
 ];
 
 const HomeBanner = () => {

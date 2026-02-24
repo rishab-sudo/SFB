@@ -223,7 +223,8 @@ margin-top: 2.5%;
 .director-image-wrap {
   width: 140px;
   height: 140px;
-  margin: 0 auto 20px auto;
+  
+margin: 0 auto 20px auto;
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #f1f1f1;
@@ -233,7 +234,8 @@ margin-top: 2.5%;
 .director-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #286a94;
   
 }
 
