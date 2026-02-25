@@ -11,7 +11,7 @@ const slides = [
   desc: "At Santosh Polyfab, we manufacture PP fabric, PP bags, monolayer films, multifilament yarn, and reprocess granules with uncompromising quality.",
 },
 {
-  image: require("../assets/Banner/factory2-blue.png"),
+  image: require("../assets/Banner/factory-packaging2.png"),
   title: "High Quality PP Bags for Every Industry",
   desc: "Our PP bags are designed for strength, durability and long-lasting performance across multiple industries.",
 },

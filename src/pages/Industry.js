@@ -26,7 +26,7 @@ const data = [
     id: 4,
     title: "Solvent Plant",
     desc: "Providing quality packaging materials for smooth industrial operations.",
-    img: require("../assets/industy/industry-sugar2.png"),
+    img: require("../assets/industy/industry-plant.png"),
   },
   {
     id: 5,
@@ -54,8 +54,6 @@ const data = [
   },
 ];
 
-
-
 const Industry = () => {
   return (
     <>
@@ -67,7 +65,7 @@ title="Industries"
     <Container fluid className="industry-section">
       <Container className="industry-heading-para-div">
 
-  <h1 className="page-heading">What We Offer..?</h1>
+  <h1 className="page-heading">Our Offerings</h1>
   <p className="page-description">
     Over the years, Santosh Polyfab has earned the trust of leading organizations
     by delivering high-quality packaging materials and dependable service. We

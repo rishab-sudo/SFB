@@ -47,11 +47,38 @@ const GetQuotePopup = ({ open, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
-      console.log("Form Data:", form);
-      alert("Quote request submitted!");
-      onClose();
-    }
+    if (!validate()) return;
+
+    fetch("https://yourdomain.com/send-mail.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ...form,
+        subject: "Get Quote Request",
+        message: "User requested a quote from website.",
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.status === "success") {
+          alert("Quote request sent successfully!");
+          setForm({
+            name: "",
+            phone: "",
+            email: "",
+            address: "",
+            product: "",
+          });
+          onClose();
+        } else {
+          alert("Error: " + data.message);
+        }
+      })
+      .catch(() => {
+        alert("Server error. Please try again later.");
+      });
   };
 
   return (
@@ -63,86 +90,85 @@ const GetQuotePopup = ({ open, onClose }) => {
 
         <h3 className="pop-up-title">Get a Quote</h3>
 
-       <form className="pop-up-form" onSubmit={handleSubmit}>
-  <div className="pop-up-field">
-    <label className="pop-up-label">Full Name</label>
-    <input
-      type="text"
-      name="name"
-      value={form.name}
-      onChange={handleChange}
-      className="pop-up-input"
-      placeholder="Enter your full name"
-    />
-    {errors.name && <span className="pop-up-error">{errors.name}</span>}
-  </div>
+        <form className="pop-up-form" onSubmit={handleSubmit}>
+          <div className="pop-up-field">
+            <label className="pop-up-label">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              className="pop-up-input"
+              placeholder="Enter your full name"
+            />
+            {errors.name && <span className="pop-up-error">{errors.name}</span>}
+          </div>
 
-  <div className="pop-up-field">
-    <label className="pop-up-label">Phone Number</label>
-    <input
-      type="text"
-      name="phone"
-      value={form.phone}
-      onChange={handleChange}
-      className="pop-up-input"
-      placeholder="Enter your phone number"
-    />
-    {errors.phone && <span className="pop-up-error">{errors.phone}</span>}
-  </div>
+          <div className="pop-up-field">
+            <label className="pop-up-label">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+              className="pop-up-input"
+              placeholder="Enter your phone number"
+            />
+            {errors.phone && <span className="pop-up-error">{errors.phone}</span>}
+          </div>
 
-  <div className="pop-up-field">
-    <label className="pop-up-label">Email</label>
-    <input
-      type="email"
-      name="email"
-      value={form.email}
-      onChange={handleChange}
-      className="pop-up-input"
-      placeholder="Enter your email"
-    />
-    {errors.email && <span className="pop-up-error">{errors.email}</span>}
-  </div>
+          <div className="pop-up-field">
+            <label className="pop-up-label">Email</label>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              className="pop-up-input"
+              placeholder="Enter your email"
+            />
+            {errors.email && <span className="pop-up-error">{errors.email}</span>}
+          </div>
 
-  <div className="pop-up-field">
-    <label className="pop-up-label">Address</label>
-    <textarea
-      name="address"
-      value={form.address}
-      onChange={handleChange}
-      className="pop-up-textarea"
-      rows="3"
-      placeholder="Enter your address"
-    ></textarea>
-    {errors.address && (
-      <span className="pop-up-error">{errors.address}</span>
-    )}
-  </div>
+          <div className="pop-up-field">
+            <label className="pop-up-label">Address</label>
+            <textarea
+              name="address"
+              value={form.address}
+              onChange={handleChange}
+              className="pop-up-textarea"
+              rows="3"
+              placeholder="Enter your address"
+            ></textarea>
+            {errors.address && (
+              <span className="pop-up-error">{errors.address}</span>
+            )}
+          </div>
 
-  <div className="pop-up-field">
-    <label className="pop-up-label">Select Product</label>
-    <select
-      name="product"
-      value={form.product}
-      onChange={handleChange}
-      className="pop-up-input"
-    >
-      <option value="">Select Product</option>
-      {products.map((p, i) => (
-        <option key={i} value={p}>
-          {p}
-        </option>
-      ))}
-    </select>
-    {errors.product && (
-      <span className="pop-up-error">{errors.product}</span>
-    )}
-  </div>
+          <div className="pop-up-field">
+            <label className="pop-up-label">Select Product</label>
+            <select
+              name="product"
+              value={form.product}
+              onChange={handleChange}
+              className="pop-up-input"
+            >
+              <option value="">Select Product</option>
+              {products.map((p, i) => (
+                <option key={i} value={p}>
+                  {p}
+                </option>
+              ))}
+            </select>
+            {errors.product && (
+              <span className="pop-up-error">{errors.product}</span>
+            )}
+          </div>
 
-  <button type="submit" className="pop-up-submit-btn">
-    Submit
-  </button>
-</form>
-
+          <button type="submit" className="pop-up-submit-btn">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
