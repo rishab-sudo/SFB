@@ -93,6 +93,46 @@
   font-weight: bold;
   color: #fff;
 }
+/* ================= CERT SECTION ================= */
+
+.cert-div {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.cert-heading {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.cert-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cert-item {
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+    height: 80px;
+}
+
+.cert-item img {
+  width: 80px;
+  height: 70px;
+  margin-bottom: 10px;
+  background: transparent !important;
+  mix-blend-mode: multiply;   
+}
+
+.cert-item p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
@@ -132,4 +172,12 @@
   .home-about-play-btn {
 display: none !important;
 }
+  .cert-wrapper {
+    gap: 20px;
+    justify-content: left;
+  }
+
+  .cert-item {
+    flex: 0 0 45%;
+  }
 }

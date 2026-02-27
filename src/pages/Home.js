@@ -8,6 +8,7 @@ import Process from '../components/Process'
 // import Testimonials from '../components/Testimonials'
 import OurCustomers from '../components/OurCustomers'
 import DotedLine from '../components/DotedLine'
+import HomeLocation from '../components/HomeLocation'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <HomeProduct/>
           <Process/>
           <OurCustomers/>
+          <HomeLocation/>
           {/* <Testimonials/> */}
     </div>
   )

@@ -14,7 +14,7 @@ const data = [
     id: 2,
     title: "Sugar Industry",
     desc: "Serving with reliable packaging solutions and timely deliveries.",
-    img: require("../assets/industy/industry-sugar2.png"),
+    img: require("../assets/industy/industry-sugar22.png"),
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const data = [
     id: 4,
     title: "Solvent Plant",
     desc: "Providing quality packaging materials for smooth industrial operations.",
-    img: require("../assets/industy/industry-plant.png"),
+    img: require("../assets/industy/industry-plant2.png"),
   },
   {
     id: 5,
