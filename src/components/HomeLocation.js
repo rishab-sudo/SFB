@@ -3,7 +3,7 @@ import "./HomeLocation.css";
 import bgImage from "../assets/Banner/factory1.png";
 
 const HomeLocation = () => {
-  const [showDirections, setShowDirections] = useState(false);
+  const [showDirections] = useState(false);
 
   return (
     <section
