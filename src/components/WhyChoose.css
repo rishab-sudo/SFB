@@ -134,7 +134,9 @@
 @media (max-width: 992px) {
   .why-choose-content {
     padding: 15px 8px;
+    text-align: left !important;
   }
+
 .whyus-box-container {
   margin-top: 45px;
 }

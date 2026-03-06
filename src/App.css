@@ -25,3 +25,19 @@ text-transform: capitalize;
   font-size: 17.2px;
   font-weight: 500;
 }
+@media (max-width: 768px){
+
+  .page-heading{
+    font-size: 26px !important;
+  }
+
+  .page-large-heading{
+    font-size: 21px !important;
+  }
+
+  .page-description{
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+}

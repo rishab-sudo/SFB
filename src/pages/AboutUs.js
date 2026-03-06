@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import { FaCheckCircle, FaCogs, FaLeaf, FaUsers } from "react-icons/fa";
 import "./AboutUs.css";
 import PageTopBanner from "../components/PageTopBanner";
@@ -7,6 +8,16 @@ import PageTopBanner from "../components/PageTopBanner";
 const AboutUs = () => {
   return (
     <>
+    <Helmet>
+<title>About Santosh Polyfab Pvt Ltd | PP Bags Manufacturer Bareilly</title>
+
+<meta
+name="description"
+content="Learn about Santosh Polyfab Pvt Ltd, a leading manufacturer of PP woven fabric and polypropylene bags in Bareilly Uttar Pradesh since 2017."
+/>
+
+<link rel="canonical" href="https://www.santoshpolyfab.com/about-us"/>
+</Helmet>
     <PageTopBanner
   title="About Us"
   currentPage="About Us"
