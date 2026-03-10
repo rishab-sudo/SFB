@@ -13,7 +13,7 @@ const HomeLocation = () => {
       <div className="homeLocation-container">
 
         <div className="homeLocation-left">
-          <h2>Visit Our Manufacturing Unit</h2>
+          <h2 className="page-heading">Visit Our Manufacturing Unit</h2>
           <p>
             We specialize in manufacturing high-quality PP Fabric and PP Bags
             designed to deliver durable and reliable packaging solutions.

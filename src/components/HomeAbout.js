@@ -102,9 +102,9 @@ const HomeAbout = () => {
               <p>ISO 14000:2015</p>
             </div>
 
-            <div className="cert-item">
+            <div className="cert-item cert-item-epr">
               <img
-                src={require("../assets/icons/uppcb-erp (1).png")}
+                src={require("../assets/icons/uppc-epr.png")}
                 alt="Eco Friendly"
               />
               <p>EPR</p>

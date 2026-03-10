@@ -121,7 +121,7 @@ const HomeBanner = () => {
           <div className="hb-brands-slider">
             <div className="hb-brands-track">
               <div className="brand-item">
-                <img src= {require("../assets/icons/uppcb-erp (1).png")} alt="HouseDesign" />
+                <img className="epr-logo" src= {require("../assets/icons/uppc-epr.png")} alt="HouseDesign" />
                 {/* <span>HouseDesign</span> */}
               </div>
 
@@ -135,13 +135,13 @@ const HomeBanner = () => {
                 {/* <span>StarScraft</span> */}
               </div>
       <div className="brand-item">
-                <img src= {require("../assets/icons/BIS.png")} alt="StarScraft" />
+                <img className="bis-logo"  src= {require("../assets/icons/BIS.png")} alt="StarScraft" />
                 {/* <span>StarScraft</span> */}
               </div>
 
               {/* duplicate for smooth loop */}
               <div className="brand-item">
-                <img src= {require("../assets/icons/uppcb-erp (1).png")} alt="HouseDesign" />
+                <img className="epr-logo" src= {require("../assets/icons/uppc-epr.png")} alt="HouseDesign" />
                 {/* <span>HouseDesign</span> */}
               </div>
       <div className="brand-item">

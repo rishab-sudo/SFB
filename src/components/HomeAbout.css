@@ -120,15 +120,19 @@
 }
 
 .cert-item img {
-  width: 80px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   margin-bottom: 10px;
   background: transparent !important;
   mix-blend-mode: multiply;   
 }
-
+/* .cert-item-epr{
+  width: 100px !important;
+  height: 100px !important;
+  background-color: #333;
+} */
 .cert-item p {
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: 600;
   margin: 0;
 }
