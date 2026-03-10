@@ -8,7 +8,7 @@ const HomeLocation = () => {
   return (
     <section
       className="homeLocation"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      // style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="homeLocation-container">
 
