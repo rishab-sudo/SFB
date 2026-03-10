@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./HomeLocation.css";
-import bgImage from "../assets/Banner/factory1.png";
+// import bgImage from "../assets/Banner/factory1.png";
 
 const HomeLocation = () => {
   const [showDirections] = useState(false);
