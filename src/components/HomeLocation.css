@@ -85,12 +85,16 @@ color: #fff !important;
 /* Responsive */
 @media (max-width: 992px) {
   .homeLocation-container {
+    width: 90%;
     flex-direction: column;
     text-align: left;
   }
-  .map-container {
-width: 95% !important;
+.homeLocation-right {
+width: 100% !important;
 }
-
+.map-container {
+ min-width: 95% !important;
+ 
+}
 
 }

@@ -3,14 +3,14 @@
   color: #ddd;
   padding: 45px 0px;
 }
+
 .footer-col  {
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-/* background-color: #286a94; */
-
 }
+
 .footer-logo{
   display: flex;
   justify-content: flex-start;
@@ -18,11 +18,13 @@ align-items: center;
   margin-right: auto;
   margin-bottom: 15px;
 }
+
 .footer-logo img{
   height: 50px;
   width: auto;
   margin-right: auto;
 }
+
 .footer-col h5 {
   color: #fff;
   margin-bottom: 16px;
@@ -33,7 +35,6 @@ align-items: center;
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 10px;
- 
 }
 
 .footer-col ul {
@@ -69,13 +70,52 @@ align-items: center;
   justify-content: space-between;
   align-items: center;
 }
+
 .margin-top{
   margin-top: 56px;
 }
-/* RESPONSIVE */
+
+/* ================= TABLET FIX ================= */
+/* 768px – 992px */
+@media (min-width:768px) and (max-width:992px){
+
+.footer-top{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+/* ABOUT TEXT FULL WIDTH */
+.footer-top .footer-col:first-child{
+  width:95%;
+  max-width:95%;
+  flex:0 0 95%;
+  align-items:flex-start;
+  text-align:left;
+  margin-bottom:30px;
+}
+
+/* THREE COLUMNS BELOW */
+.footer-top .footer-col:nth-child(2),
+.footer-top .footer-col:nth-child(3),
+.footer-top .footer-col:nth-child(4){
+  width:33.33%;
+  max-width:33.33%;
+  flex:0 0 33.33%;
+  align-items:flex-start;
+  text-align:left;
+}
+
+.margin-top{
+  margin-top:0px;
+}
+
+}
+
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
+
   .footer-col {
-    align-items: flex-start !important;   /* 👈 center se left */
+    align-items: flex-start !important;
     text-align: left !important;
   }
 
@@ -84,11 +124,13 @@ align-items: center;
     align-items: flex-start !important;
     margin-right: 0;
   }
-.col-heading{
-  font-size: 22px !important;
-  font-weight: 600;
-  margin-top: 25px;
-}
+
+  .col-heading{
+    font-size: 22px !important;
+    font-weight: 600;
+    margin-top: 25px;
+  }
+
   .footer-col ul,
   .footer-col p,
   .footer-col h5,
@@ -96,9 +138,11 @@ align-items: center;
     text-align: left !important;
     font-size: 18px;
   }
-.margin-top{
-  margin-top: 2px;
-}
+
+  .margin-top{
+    margin-top: 2px;
+  }
+
   .footer-bottom-inner {
     justify-content: flex-start;
     align-items: flex-start;
@@ -108,4 +152,3 @@ align-items: center;
   }
 
 }
-

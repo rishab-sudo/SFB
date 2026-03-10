@@ -99,7 +99,7 @@ const HomeAbout = () => {
                 src={require("../assets/icons/iso2.png")}
                 alt="Quality Assured"
               />
-              <p>ISO 1400:2015</p>
+              <p>ISO 14000:2015</p>
             </div>
 
             <div className="cert-item">
@@ -107,7 +107,7 @@ const HomeAbout = () => {
                 src={require("../assets/icons/uppcb-erp (1).png")}
                 alt="Eco Friendly"
               />
-              <p>ERP</p>
+              <p>EPR</p>
             </div>
 
             <div className="cert-item">

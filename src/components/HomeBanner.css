@@ -175,14 +175,22 @@
 @media (max-width: 992px) {
   .hb-bottom-wrapper {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     left: 50%;
+    margin-bottom: 2rem;
   }
-
+.home-banner-content {
+  max-width: 90%;
+  color: #fff;
+}
   .hb-bottom-left,
   .hb-bottom-right {
     width: 100%;
   }
+  /* BRAND ITEM */
+.hb-bottom-right{
+  display: none !important;
+}
 }
 
 @media (max-width: 768px) {
