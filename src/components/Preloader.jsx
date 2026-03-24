@@ -5,12 +5,12 @@ const Preloader = ({ onFinish }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (onFinish) onFinish();
-    }, 5000); // 5 seconds
+    }, 3500); // 5 seconds
 
     return () => clearTimeout(timer);
   }, [onFinish]);
 
-  const text = "Santosh Polyfab";
+  const text = "Santosh Polyfab Pvt. Ltd.";
 
   return (
     <div className="preloader-wrapper">

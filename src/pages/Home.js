@@ -8,6 +8,7 @@ import Achievements from '../components/Achievements'
 import Process from '../components/Process'
 // import Testimonials from '../components/Testimonials'
 import OurCustomers from '../components/OurCustomers'
+import HomeCertificate from "../components/HomeCertificate"
 import DotedLine from '../components/DotedLine'
 import HomeLocation from '../components/HomeLocation'
 
@@ -34,6 +35,7 @@ const Home = () => {
         <WhyChoose/>
          <DotedLine/>
         <HomeAbout/>
+        <HomeCertificate/>
         <DotedLine/>
           <Achievements/>
         <HomeProduct/>

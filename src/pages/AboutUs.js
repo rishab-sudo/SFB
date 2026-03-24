@@ -105,6 +105,48 @@ Our substantial increase in production capacity and immense success is based on 
         </Container>
       </section>
 
+
+ <section className="main-founder">
+      <Container>
+        <Row className="align-items-center">
+          
+          {/* LEFT CONTENT */}
+           <Col md={6} className="main-founder-col">
+            <div className="main-founder-content">
+              <h2 className="main-founder-heading">
+              “Built on his values, driven by our commitment.”
+              </h2>
+
+              <p className="page-description main-founder-description">
+               Late <span className="fw-bold">'Shri Radhey Shyam Agarwal Ji'</span> continues to be a guiding force and source of inspiration for our journey. His values of integrity, dedication, and perseverance have laid the foundation upon which our company stands today. We carry forward his legacy with pride, striving to uphold the
+                principles he believed in and translating them into excellence in everything we do.
+              </p>
+
+            </div>
+          </Col>
+
+          {/* RIGHT IMAGE */}
+          <Col md={6} className="main-founder-col">
+            <div className="main-founder-image-wrapper">
+              <img
+                src={require("../assets/main-founder.jpeg")} // 🔁 replace with your image
+                alt="Main Founder"
+                className="main-founder-image"
+              />
+
+              {/* TAGLINE */}
+              <p className="main-founder-tagline"> In Loving Memory</p>
+              <p className="main-founder-tagline" style={{marginTop:"-10px"}}>
+                “ Late Shri Radhey Shyam Agarwal Ji”
+              </p>
+            </div>
+          </Col>
+
+        </Row>
+      </Container>
+    </section>
+
+
    
 <section className="mission-vision-section g-0">
   <div className="mission-vision-overlay">

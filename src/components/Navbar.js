@@ -42,6 +42,8 @@ const Navbar = () => {
             </li>
 
             <li><NavLink to="/industry">Industries</NavLink></li>
+            
+<NavLink to="/#certificates">Certificates</NavLink>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
 
@@ -81,6 +83,7 @@ const Navbar = () => {
         </div>
 
         <NavLink to="/industry" onClick={() => setOpen(false)}>Industries</NavLink>
+         <NavLink to="/#certificates">Certificates</NavLink>
         <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
       </div>
 
